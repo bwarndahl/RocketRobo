@@ -298,8 +298,8 @@ if (state = states.RESPAWN)
 	
 	//if (respawnDist > 5)
 	//{
-		x += (xTo - x) / 5; //(respawnDist / 8);
-		y += (yTo - y) / 5; //(respawnDist / 8);
+		x += (xTo - x) / 10; //(respawnDist / 8);
+		y += (yTo - y) / 10; //(respawnDist / 8);
 	//}
 	
 	count += 1;

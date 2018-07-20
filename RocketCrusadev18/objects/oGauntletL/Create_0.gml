@@ -7,10 +7,10 @@ enum GstatesL
 
 GstateL = GstatesL.INACTIVE
 
-speed = 12;
-maxSpeed = 24;
+speed = 6;
+maxSpeed = 10;
 temp = 1;
-delay = 30;
+delay = 60;
 
 isActive = false;
 // Shake screen when rocket is created.

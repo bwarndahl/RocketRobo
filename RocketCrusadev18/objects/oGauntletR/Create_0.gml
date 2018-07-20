@@ -11,13 +11,15 @@ enum Gstates
 isActive = false;
 Gstate = Gstates.INACTIVE;
 
-speed = 12;
-maxSpeed = 24;
+
+
+speed = 6;
+maxSpeed = 10;
 temp = 1;
 canShoot = true;
-delay = 30;
-spd = 2;
-xoffset = 6;
+delay = 60;
+spd = 1;
+xoffset = -6;
 yoffset = 3;
 
 h = 0;

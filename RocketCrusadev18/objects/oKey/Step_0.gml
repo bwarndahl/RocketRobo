@@ -2,7 +2,7 @@
 oldkeyState = keyState;
 if(keyState = keyStates.INACTIVE)
 {
-	y += Wave(0.5,-0.5, 3, 0);
+	y += Wave(0.25,-0.25, 3, 0);
 	if(place_meeting(x,y,oPlayer) && (!oTransition.hasKey)) keyState = keyStates.ACTIVE;
 }
 else if(keyState = keyStates.ACTIVE)

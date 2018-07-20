@@ -1,5 +1,5 @@
 /// @desc ?
-targetx = oPlayer.x + (6 * sign(oPlayer.facing)) - 12;
+targetx = oPlayer.x + (6 * sign(oPlayer.facing)) - 6;
 distx = point_distance(x, y, oPlayer.x - (6 * sign(oPlayer.facing)),oPlayer.y);
 if (GstateL = Gstates.ROCKET) || (GstateL = Gstates.GRAB) || (GstateL = Gstates.RICOCHET) isActive = true;
 
@@ -77,7 +77,7 @@ if (GstateL = Gstates.INACTIVE) && (oPlayer.canShoot) // && (instance_exists(oGa
 			canShoot = false;
 			//alarm[9] = 5;
 			//alarm[10] = 30;
-			alarm[11] = 30;
+			alarm[11] = 60;
 		}
 		
 		alarm[0] = delay;

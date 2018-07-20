@@ -80,7 +80,7 @@ if (Gstate = Gstates.INACTIVE) && (instance_exists(oGauntletR)) {
 		{
 			canShoot = false;
 			alarm[9] = 3;
-			alarm[10] = 30;
+			alarm[10] = 60;
 		}
 				
 		// image_index = sGauntletR;
@@ -111,8 +111,8 @@ if(isActive)
 	var trail = instance_create(trailx,traily,oTrail);
 	trail.image_angle = image_angle;
 	
-	speed *= 1.5;
-	speed = clamp(speed,2,18)
+	speed *= 1.25;//1.5
+	speed = clamp(speed,2,maxSpeed)
 }
 
 if(Gstate = Gstates.RICOCHET)

@@ -35,7 +35,7 @@ if (!instance_exists(oCamera))
 // Movement Vars //////////////////////////////////////////////////////////////
 
 // Adjust THIS to adjust overall player speed
-m = 1;
+m = 0.5;
 
 // Acceleration + friction
 groundAccel = 1.0  * m;

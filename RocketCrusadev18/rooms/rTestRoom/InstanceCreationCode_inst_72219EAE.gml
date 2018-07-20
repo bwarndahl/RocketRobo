@@ -1,0 +1,2 @@
+spawn = oKey;
+spawnLayer = "lPlayer";

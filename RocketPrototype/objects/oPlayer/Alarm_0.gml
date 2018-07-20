@@ -1,2 +1,0 @@
-sticking = false;
-

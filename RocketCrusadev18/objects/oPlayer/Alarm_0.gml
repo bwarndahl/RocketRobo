@@ -1,0 +1,2 @@
+/// @desc Sticking
+sticking = false;

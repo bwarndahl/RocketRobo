@@ -1,0 +1,3 @@
+targetRoom = rTestRoom2;
+targetx = 320;
+targety = 280;

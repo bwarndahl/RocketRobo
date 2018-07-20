@@ -134,6 +134,25 @@
             }
         },
         {
+            "Key": "0938b40c-552b-48ef-85c7-2e2ae7d89905",
+            "Value": {
+                "id": "0b9f1210-a63a-4903-9dad-ea179eaf2017",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oBird\/oBird.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0947f6d5-e08e-4704-8c5c-4153cfccaf34",
             "Value": {
                 "id": "8b79c241-b3a4-43be-bce3-c51f6469b870",
@@ -758,6 +777,25 @@
                 ],
                 "resourcePath": "objects\/oSun\/oSun.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "35f66771-dc6d-43bb-ba5d-b8edb5e6f336",
+            "Value": {
+                "id": "c152ae9c-198f-42f6-af86-9bea6acfc795",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sBird\/sBird.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2791,6 +2829,25 @@
                 ],
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f533687e-f8d8-4c00-884a-ad650ef9625b",
+            "Value": {
+                "id": "c4d9d08d-be32-48f4-a013-0555e552e7ba",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oInitialize\/oInitialize.yy",
+                "resourceType": "GMObject"
             }
         },
         {

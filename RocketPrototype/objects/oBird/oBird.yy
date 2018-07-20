@@ -1,28 +1,18 @@
 {
-    "id": "9b3b1e9e-6484-4b62-b0b6-93c8df4dd1ce",
+    "id": "0938b40c-552b-48ef-85c7-2e2ae7d89905",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oCamera",
+    "name": "oBird",
     "eventList": [
         {
-            "id": "ac9adb6a-c2f8-4a2f-a4e8-aa8d22225980",
+            "id": "59bde177-5d26-4977-af2c-cdfec4970140",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "9b3b1e9e-6484-4b62-b0b6-93c8df4dd1ce"
-        },
-        {
-            "id": "1c034fbf-3b9d-4dab-ab28-98eb5913c74c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "9b3b1e9e-6484-4b62-b0b6-93c8df4dd1ce"
+            "m_owner": "0938b40c-552b-48ef-85c7-2e2ae7d89905"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "35f66771-dc6d-43bb-ba5d-b8edb5e6f336",
     "visible": true
 }

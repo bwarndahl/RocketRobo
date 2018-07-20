@@ -1,6 +1,18 @@
-/// @description Update Camera
+/// @description Insert description here
+var scale = 2;
 
-//Update Destination
+var w = window_get_width() / scale; 
+var h = window_get_height() / scale;
+
+display_set_gui_size(w, h);
+
+var cam = view_get_camera(0);
+
+view_set_wport(0, w); 
+view_set_hport(0, h);
+
+camera_set_view_size(cam, view_wport[0], view_hport[0]);
+
 if(instance_exists(follow))
 {
 	xTo = follow.x;
@@ -30,8 +42,8 @@ if(instance_exists(follow))
 	x += (xTo - x) / 10;
 	y += (yTo - y) / 10;
 
-	x = clamp(x,view_w_half + buff,room_width - view_w_half - buff);
-	y = clamp(y,view_h_half + buff,room_height - view_h_half - buff);
+	x = clamp(x,0+view_wview[0]/2,room_width-view_wview[0]/2-80);
+	y = clamp(y,0,room_height-view_hview[0]/2-50);
 
 	//Screen Shake
 	x += random_range(-shake_remain,shake_remain);
@@ -42,3 +54,4 @@ if(instance_exists(follow))
 	camera_set_view_pos(cam,x - view_w_half,y - view_h_half);
 
 }
+surface_resize(application_surface, w, h);

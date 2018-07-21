@@ -6,5 +6,5 @@ enum gameStates
 }
 gameState = gameStates.PLAY;
 
-defaultx = 552;
-defaulty = 456;
+defaultx = 707;
+defaulty = 917;

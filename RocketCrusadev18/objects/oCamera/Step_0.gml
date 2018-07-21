@@ -13,8 +13,17 @@ view_set_hport(0, h);
 
 camera_set_view_size(cam, view_wport[0], view_hport[0]);
 
+surface_resize(application_surface, w, h);
+
 if(instance_exists(follow))
 {
+	if(count == 0)
+	{
+		x = follow.x;
+		y = follow.y;
+		count+=1;
+	}
+	
 	xTo = follow.x;
 	yTo = follow.y;
 
@@ -42,8 +51,9 @@ if(instance_exists(follow))
 	x += (xTo - x) / 10;
 	y += (yTo - y) / 10;
 
-	x = clamp(x,0+view_wview[0]/2,room_width-view_wview[0]/2-80);
-	y = clamp(y,0,room_height-view_hview[0]/2-50);
+	//Clamp
+	x = clamp(x,0+view_wport[0]/2 ,room_width-view_wport[0]/2); //-80  camera_get_view_width(view_camera[0])/2
+	y = clamp(y,0+view_hport[0]/2,room_height-view_hport[0]/2); //-50
 
 	//Screen Shake
 	x += random_range(-shake_remain,shake_remain);
@@ -54,4 +64,6 @@ if(instance_exists(follow))
 	camera_set_view_pos(cam,x - view_w_half,y - view_h_half);
 
 }
-surface_resize(application_surface, w, h);
+
+//show_debug_message(string("width: ") + string(w));
+//show_debug_message(string("height:") + string(h));

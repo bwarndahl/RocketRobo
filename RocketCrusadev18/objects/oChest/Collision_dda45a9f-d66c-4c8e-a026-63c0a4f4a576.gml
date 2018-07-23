@@ -3,7 +3,8 @@ if(!isOpen) && (other.isActive)
 {
 	other.GstateL = Gstates.RICOCHET
 	isOpen = true;
-	
+	//other.alarm[0] = 0.2;
+		
 	/*
 	if (spawn =! 0) && (spawnLayer != 0)
 	{

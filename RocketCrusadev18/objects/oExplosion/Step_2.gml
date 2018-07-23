@@ -8,10 +8,12 @@ if(collision_circle(x,y,25,oPlayer,false,false)) && (image_index <= 2)
 {
 	with(oPlayer)
 	{
-	h += other.kbx / other.kbmagnitude;
-	v += other.kby / other.kbmagnitude;
-	tempFric = airFric;
-	tempAccel = airAccel;
+		h = 0;
+		v = 0;
+		h += other.kbx / other.kbmagnitude;
+		v += other.kby / other.kbmagnitude;
+		tempFric = airFric;
+		tempAccel = airAccel;
 	}
 	mask_index = -1;
 }

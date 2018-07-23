@@ -34,13 +34,13 @@ if(instance_exists(follow))
 
 		if (oPlayer.onGround) yoffset -= groundoffset;
 
-		x += xoffset
-		y += yoffset
+		x += xoffset;
+		y += yoffset / 2;
 	}
 
 	//Update Object Position
-	x += (xTo - x) / 10;
-	y += (yTo - y) / 10;
+	x += (xTo - x) / 20;
+	y += (yTo - y) / 20;
 
 	x = clamp(x,0+view_wview[0]/2,room_width-view_wview[0]/2-80);
 	y = clamp(y,0,room_height-view_hview[0]/2-50);

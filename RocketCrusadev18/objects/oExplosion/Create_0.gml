@@ -6,7 +6,7 @@ kbDistance = 0;
 kbDirection = 0;
 kbx = 0;
 kby = 0;
-kbmagnitude = 2 //Adjusts knockback strength.
+kbmagnitude = 3; //Adjusts knockback strength.
 alarm[0] = 6; //Adjusts how many frames the hitbox is active.
 
 

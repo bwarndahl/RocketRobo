@@ -7,7 +7,8 @@ draw_set_font(fontAng)
 
 if(instance_exists(oPlayer))
 {
-	if(instance_exists(oPlayer)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) - 15, __view_get( e__VW.YView, 0 ) + 40, string_hash_to_newline(string(instance_number(oTrail))));
+	object_set_visible(oPlayer, true)
+	if(instance_exists(oPlayer)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) - 15, __view_get( e__VW.YView, 0 ) + 40, string_hash_to_newline(string(instance_number(oPlayer))));
 	//if(instance_exists(oPlayer)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) - 15, __view_get( e__VW.YView, 0 ) + 50, string_hash_to_newline(string(oPlayer.respawnx)));
 	//if(instance_exists(oPlayer)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) - 15, __view_get( e__VW.YView, 0 ) + 100, string_hash_to_newline(string(oPlayer.respawny)));
 	//if(instance_exists(oPlayer)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) - 15, __view_get( e__VW.YView, 0 ) + 150, string_hash_to_newline(string(oPlayer.x)));

@@ -8,7 +8,10 @@ yTo = ystart;
 
 xoffset = 0;
 yoffset = 0;
-facingoffset = 2;
+xMove = 0;
+yMove = 0;
+magnitude = 20;
+//facingoffset = 2;
 groundoffset = 5;
 angle = 0;
 

@@ -30,21 +30,26 @@ if(instance_exists(follow))
 	//Account for Mouse Angle & onGround
 	if(follow == oPlayer)
 	{
-		xoffset = 0;
-		yoffset = 0;
+		xoffset = point_distance(oPlayer.x,oPlayer.y,mouse_x,mouse_y) / 50;
+		yoffset = point_distance(oPlayer.x,oPlayer.y,mouse_x,mouse_y) / 100;
 		angle = point_direction(oPlayer.x,oPlayer.y,mouse_x,mouse_y);
 
-		if (0 < angle && angle < 90) || (270 <= angle && angle <= 360) xoffset = xoffset + 2;
-		if (90 <= angle && angle <= 270) xoffset = xoffset - 2;
-		if (20 <= angle && angle <= 160) yoffset = yoffset - 2;
-		if (200 <= angle && angle <= 340) yoffset = yoffset + 2;
+		if(oPlayer.onGround) yoffset -= groundoffset;
 
-		if (oPlayer.h != 0) xoffset += facingoffset * oPlayer.facing
+		//if (0 < angle && angle < 90) || (270 <= angle && angle <= 360) xoffset = xoffset + 2;
+		//if (90 <= angle && angle <= 270) xoffset = xoffset - 2;
+		//if (20 <= angle && angle <= 160) yoffset = yoffset - 2;
+		//if (200 <= angle && angle <= 340) yoffset = yoffset + 2;
+
+		//if (oPlayer.h != 0) xoffset += facingoffset * oPlayer.facing
 
 		if (oPlayer.onGround) yoffset -= groundoffset;
 
-		x += xoffset
-		y += yoffset
+		xMove = lengthdir_x(xoffset, angle);
+		yMove = lengthdir_y(yoffset, angle);
+		
+		x += xMove;
+		y -= yMove;
 	}
 
 	//Update Object Position

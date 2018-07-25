@@ -229,6 +229,25 @@
             }
         },
         {
+            "Key": "0ea4e542-2dde-46af-a116-93dfec557819",
+            "Value": {
+                "id": "2c05689f-c086-4699-9dc8-4821937ae2fc",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/DebugDraw\/DebugDraw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0efb79d1-db34-4e2d-a2bd-58c91cd6b334",
             "Value": {
                 "id": "18bfff53-589b-4fbb-acdf-ef09c1763055",
@@ -851,7 +870,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "rooms\/rHub\/rHub.yy",
+                "resourcePath": "rooms\/rHub1\/rHub1.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1517,6 +1536,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/sPushBlock\/sPushBlock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6be9ce2a-f290-40ed-bb0a-d87908dcf7b2",
+            "Value": {
+                "id": "84d4801c-553b-4bb5-a9e6-1c51cf128908",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sMouse\/sMouse.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2680,6 +2718,25 @@
             }
         },
         {
+            "Key": "c8eb4be3-2663-406a-9283-5fdfe7b8836f",
+            "Value": {
+                "id": "1b26d30d-4f9f-470b-b7d1-8aa3c230edc3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oMouse\/oMouse.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c8eda5c7-6fb1-4d79-a6cb-0434f121e4dc",
             "Value": {
                 "id": "53a7ce76-924a-4e57-80f7-a234b1f05ded",
@@ -3361,7 +3418,8 @@
         "293fe3e9-82c5-4a30-8008-f2ef2a19501e",
         "36421437-c474-43a3-91fc-dd5b42f1ce5f",
         "61794ecf-92a1-4f63-a51a-af961df396f5",
-        "dc9ecff8-2cd4-4b42-b577-002e3bb50589"
+        "dc9ecff8-2cd4-4b42-b577-002e3bb50589",
+        "0ea4e542-2dde-46af-a116-93dfec557819"
     ],
     "tutorial": ""
 }

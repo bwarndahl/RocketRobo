@@ -6,12 +6,14 @@ enum gameStates
 gameState = gameStates.PLAY;
 
 
-if(room == rTesting)
+if(room == rHub)
 {
-	defaultx = 500;
-	defaulty = 500;	
+	defaultx = 588;
+	defaulty = 822;	
 }
 
 once = false;
 global.xPos = defaultx;
 global.yPos = defaulty;
+
+metal = 0;

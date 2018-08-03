@@ -1,34 +1,34 @@
 {
-    "id": "0be618fd-53f7-4436-b29e-f13f887d6ff3",
+    "id": "01fa5f45-7b4d-42fb-a276-e3c9c56dbff6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oGame",
+    "name": "oSaveLoad",
     "eventList": [
         {
-            "id": "b81b854f-c23d-4e98-8430-c2e76499a497",
+            "id": "0f5b74bd-cf1e-4a07-b093-1cdd4808af2f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "0be618fd-53f7-4436-b29e-f13f887d6ff3"
+            "enumb": 76,
+            "eventtype": 9,
+            "m_owner": "01fa5f45-7b4d-42fb-a276-e3c9c56dbff6"
         },
         {
-            "id": "8f28f0ce-b7fa-4d8d-89e1-78c8c279c6db",
+            "id": "cbf3cd92-b0a3-4c59-a911-b374cecc7ada",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "0be618fd-53f7-4436-b29e-f13f887d6ff3"
+            "enumb": 75,
+            "eventtype": 9,
+            "m_owner": "01fa5f45-7b4d-42fb-a276-e3c9c56dbff6"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "6391a868-f6d0-4163-bf51-7fd5d059621f",
-    "persistent": true,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -38,10 +38,8 @@
     "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
-    "physicsShape": 0,
-    "physicsShapePoints": [
-        
-    ],
+    "physicsShape": 1,
+    "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,

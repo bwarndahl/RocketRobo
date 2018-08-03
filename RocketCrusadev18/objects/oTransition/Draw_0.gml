@@ -17,7 +17,7 @@ if(mode == TRANSITION.GROW)
 		shrink = grow+sizeFix2;
 		grow = 0;
 		mode = TRANSITION.SHRINK;
-		room_goto(rTesting);
+		room_goto(rHub);
 	}
 }
 	

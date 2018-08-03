@@ -5,12 +5,9 @@ draw_set_halign(fa_center);
 
 draw_set_font(fontAng)
 
-if(instance_exists(oPlayer))
+if(instance_exists(oGame))
 {
-	 DebugDraw(camera_get_view_x(view_camera[0]));
-	//DebugDraw(oTransition2.diag);
-	//DebugDraw(window_mouse_get_y());
-	//DebugDraw(window_get_height());
+	DebugDraw(oGame.metal);
 }
 
 	//if(instance_exists(oPlayer)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) - 15, __view_get( e__VW.YView, 0 ) + 140, string_hash_to_newline(string(oCamera.xMove)));

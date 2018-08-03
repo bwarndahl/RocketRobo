@@ -1,4 +1,4 @@
-///DebugDraw(argument0);
+// @arg variable
 
 a = argument0;
 

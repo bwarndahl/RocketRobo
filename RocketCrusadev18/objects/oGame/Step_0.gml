@@ -4,9 +4,14 @@ if(once == false && !instance_exists(oPlayer))
 	instance_create_layer(defaultx, defaulty, "lPlayer", oPlayer);	
 }
 
-if(room != rMenu && !instance_exists(oPause))
+if(room != rMenu && !instance_exists(oPause) && room != rPause)
 {
 	instance_create_layer(0,0,"lGame",oPause);
+}
+
+if(room != rMenu && !instance_exists(oSaveLoad) && room != rPause)
+{
+	instance_create_layer(0,0,"lGame",oSaveLoad);
 }
 
 if(room == rPause)

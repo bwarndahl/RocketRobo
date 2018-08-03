@@ -25,10 +25,17 @@ if (onGround) {
     tempFric  = groundFric;
 	respawnx = x;
 	respawny = y - 2;
+	firstGround = true;
 } else {
 	grounded = 0;
     tempAccel = airAccel;
     tempFric  = airFric;
+	if(firstGround = false)
+	{
+		respawnx = x;
+		respawny = y;
+		firstGround = true;	
+	}
 }
 
 // Stick to wall //////////////////////////////////////////////////////////////
@@ -331,6 +338,8 @@ else
 	hasControl = true;
 }
 
-
-/* */
-/*  */
+if(room != rPause)
+{
+	global.xPos = x;
+	global.yPos = y;
+}

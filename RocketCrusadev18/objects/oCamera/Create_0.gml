@@ -20,3 +20,5 @@ shake_magnitude = 0;
 shake_remain = 0;
 
 count = 0;
+xCam = camera_get_view_x(view_camera[0]);
+yCam = camera_get_view_y(view_camera[0]);

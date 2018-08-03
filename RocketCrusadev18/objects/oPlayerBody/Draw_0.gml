@@ -42,42 +42,51 @@ with(oPlayer)
 }
 
 // Draw player
-if (oPlayer.onGround)
-    draw_sprite_ext(sprite_index, image_index, x, y + (16 - 16 * oPlayer.yscale) * 0.25, oPlayer.facing * oPlayer.xscale, oPlayer.yscale, 0, c_white, image_alpha);    
-else
-    draw_sprite_ext(sprite_index, image_index, x, y, oPlayer.facing * oPlayer.xscale, oPlayer.yscale, 0, c_white, image_alpha);
-
-
-#region Line & Cursor
-if(oPlayer.state != states.RESPAWN)
+if(instance_exists(oPlayer))
 {
-	// Line to mouse
-	draw_set_alpha(0.25);
-	draw_line_width(x, y, mouse_x, mouse_y, 4);
-	draw_set_alpha(1);
-
-
-	// Draw cursor
-	if(instance_exists(oGauntletR)) && (oGauntletR.isActive != true)  || (instance_exists(oGauntletL)) && (oGauntletL.isActive != true) draw_sprite_ext(sCursor, -1, mouse_x, mouse_y, 1, 1, point_direction(x, y, mouse_x, mouse_y) + 45, c_white, 1);
-	else draw_sprite_ext(sCursorClick, -1, mouse_x, mouse_y, 1, 1, point_direction(x, y, mouse_x, mouse_y) + 45, c_white, 1);
+		if (oPlayer.onGround)
+	    draw_sprite_ext(sprite_index, image_index, x, y + (16 - 16 * oPlayer.yscale) * 0.25, oPlayer.facing * oPlayer.xscale, oPlayer.yscale, 0, c_white, image_alpha);    
+	else
+	    draw_sprite_ext(sprite_index, image_index, x, y, oPlayer.facing * oPlayer.xscale, oPlayer.yscale, 0, c_white, image_alpha);
 }
-#endregion
+
+if(instance_exists(oPlayer))
+{
+	#region Line & Cursor
+	if(oPlayer.state != states.RESPAWN)
+	{
+		// Line to mouse
+		draw_set_alpha(0.25);
+		draw_line_width(x, y, mouse_x, mouse_y, 4);
+		draw_set_alpha(1);
+
+
+		// Draw cursor
+		if(instance_exists(oGauntletR)) && (oGauntletR.isActive != true)  || (instance_exists(oGauntletL)) && (oGauntletL.isActive != true) draw_sprite_ext(sCursor, -1, mouse_x, mouse_y, 1, 1, point_direction(x, y, mouse_x, mouse_y) + 45, c_white, 1);
+		else draw_sprite_ext(sCursorClick, -1, mouse_x, mouse_y, 1, 1, point_direction(x, y, mouse_x, mouse_y) + 45, c_white, 1);
+	}
+	#endregion
+}
+
 
 
 
 if (r <= 0) r = 0;
 if (pulse <= 0) pulse = 0;
 //draw_sprite_ext(sGun, gun, x + lengthdir_x(4, point_direction(x, y, mouse_x, mouse_y)), y + 4 + lengthdir_y(4, point_direction(x, y, mouse_x, mouse_y)), xscale, facing, point_direction(x, y, mouse_x, mouse_y), c_white, 1);
-if(oPlayer.state = states.RESPAWN)
+if(instance_exists(oPlayer))
 {
-	r = 12;
-	pulse = Wave(-2,2,5,0);
+	if(oPlayer.state == states.RESPAWN)
+	{
+		r = 12;
+		pulse = Wave(-2,2,5,0);
 	
-}
-else
-{
-	pulse -= 0.5;
-	r -= 0.3;
+	}
+	else
+	{
+		pulse -= 0.5;
+		r -= 0.3;
+	}
 }
 
 draw_circle_color(x, y, r + pulse, c_white, c_white, false);

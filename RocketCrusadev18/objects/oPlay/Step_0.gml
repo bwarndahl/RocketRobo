@@ -10,7 +10,7 @@ if (position_meeting(mouse_x,mouse_y,self))
 	{
 		image_alpha = 1;
 		audio_stop_all();
-		room_goto(rHub1); //rHub
+		room_goto(rTesting); //rHub
 	}
 	
 }

@@ -7,6 +7,7 @@ hasControl = true;
 // Collision below
 onGround = false;
 grounded = 0;
+firstGround = false;
 dJump = false;
 
 // Create Body Parts
@@ -135,3 +136,6 @@ ydrift = 5;
 buff = 0;
 
 ///////////////////////////////////////////////////////////////////////////////
+
+//Saves
+metal = 0;

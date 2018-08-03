@@ -8,10 +8,11 @@
         "bad511b3-3e3e-48bf-ae1d-fef434e8ee33",
         "52a6b51c-6e48-43d2-a348-cf472d4f5e57",
         "17138266-c073-4d1d-9f3c-ea34f5ca1b7e",
-        "deef410b-c9ed-4db4-8d20-83ef0cfee108"
+        "deef410b-c9ed-4db4-8d20-83ef0cfee108",
+        "c8eb4be3-2663-406a-9283-5fdfe7b8836f"
     ],
     "filterType": "GMObject",
-    "folderName": "MenuButtons",
+    "folderName": "Menu",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

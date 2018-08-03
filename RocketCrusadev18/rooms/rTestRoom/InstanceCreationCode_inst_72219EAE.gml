@@ -1,2 +1,0 @@
-spawn = oKey;
-spawnLayer = "lPlayer";

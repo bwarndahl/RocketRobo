@@ -1,8 +1,12 @@
 /// @desc ?
 
 // Reset Body Part Coords
-x = oPlayer.x;
-y = oPlayer.y - 2;
+if(instance_exists(oPlayer))
+{
+	x = oPlayer.x;
+	y = oPlayer.y - 2;	
+}
+
 
 
 //Adjust Head Position According to Animation

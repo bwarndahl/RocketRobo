@@ -1,3 +1,4 @@
+/*
 var i;
 
 for (i = 0; i < 32; ++i) 
@@ -5,4 +6,4 @@ for (i = 0; i < 32; ++i)
     
 instance_destroy();
 
-y--
+y--;

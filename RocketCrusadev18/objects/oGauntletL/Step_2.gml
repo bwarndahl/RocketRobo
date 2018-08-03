@@ -1,9 +1,12 @@
 /// @desc ?
 
 // Reset Body Part Coords
-if (oPlayer.states != states.IDLE) && (isActive)
+if(instance_exists(oPlayer))
 {
-	x = targetx + 12;
+	if (oPlayer.states != states.IDLE) && (isActive)
+	{
+		x = targetx + 12;
+	}
 }
 
 

@@ -9,7 +9,7 @@
         "99ece60c-5e06-4a49-aaf1-ab52e5e1a6ed"
     ],
     "filterType": "GMSprite",
-    "folderName": "gEnemy",
+    "folderName": "Enemy",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

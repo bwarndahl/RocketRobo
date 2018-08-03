@@ -1,8 +1,11 @@
 /// @desc ?
 
 // Reset Body Part Coords
-x = oPlayer.x
-y = oPlayer.y - 6
+if(instance_exists(oPlayer))
+{
+	x = oPlayer.x
+	y = oPlayer.y - 6	
+}
 
 switch oPlayer.look
 {

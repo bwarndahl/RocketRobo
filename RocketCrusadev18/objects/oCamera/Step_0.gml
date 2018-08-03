@@ -1,4 +1,5 @@
 /// @description Insert description here
+
 var scale = 2;
 
 var w = window_get_width() / scale; 
@@ -13,9 +14,12 @@ view_set_hport(0, h);
 
 camera_set_view_size(cam, view_wport[0], view_hport[0]);
 
-surface_resize(application_surface, w, h);
+if(!sprite_exists(global.PauseScreenShot) && oTransition.mode == TRANSITION.NONE)
+{
+	surface_resize(application_surface, w, h);	
+}
 
-if(instance_exists(follow))
+if(instance_exists(follow) && room != rPause)
 {
 	if(count == 0)
 	{
@@ -53,12 +57,20 @@ if(instance_exists(follow))
 	}
 
 	//Update Object Position
-	x += (xTo - x) / 10;
-	y += (yTo - y) / 10;
+	if(oTransition.mode == TRANSITION.NONE)
+	{
+		x += (xTo - x) / 10;
+		y += (yTo - y) / 10;	
+	}
+	else
+	{
+		x+= (xTo-x);
+		y+= (yTo-y);
+	}
 
 	//Clamp
-	x = clamp(x,0+view_wport[0]/2 ,room_width-view_wport[0]/2); //-80  camera_get_view_width(view_camera[0])/2
-	y = clamp(y,0+view_hport[0]/2,room_height-view_hport[0]/2); //-50
+	x = clamp(x,0+view_wport[0]/2 ,room_width-view_wport[0]/2);
+	y = clamp(y,0+view_hport[0]/2,room_height-view_hport[0]/2);
 
 	//Screen Shake
 	x += random_range(-shake_remain,shake_remain);
@@ -67,6 +79,7 @@ if(instance_exists(follow))
 
 	//Update Camera View
 	camera_set_view_pos(cam,x - view_w_half,y - view_h_half);
+	
 	
 	//Prevents Dock from Appearing
 	if(window_get_height()-2 <= window_mouse_get_y())
@@ -83,5 +96,4 @@ if(instance_exists(follow))
 	{
 		window_mouse_set(3,window_mouse_get_y());	
 	}	
-	
 }

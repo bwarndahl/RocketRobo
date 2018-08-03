@@ -8,10 +8,14 @@ if(Gstate = Gstates.INACTIVE)
 }
 
 
-if (oPlayer.states != states.IDLE) && (isActive)
+if(instance_exists(oPlayer))
 {
-	x += ((xTo - x) / spd) + xoffset; //x = targetx + 12;
+	if (oPlayer.states != states.IDLE) && (isActive)
+	{
+		x += ((xTo - x) / spd) + xoffset; //x = targetx + 12;
+	}	
 }
+
 
 //Adjust Head Position According to Animation
 with (oPlayer)

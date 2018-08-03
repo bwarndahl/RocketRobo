@@ -8,7 +8,7 @@ with (oPlayer)
 			if (!other.isLocked) && (other.delay)
 			{
 				hasControl = false;
-				slideTransition(TRANS_MODE.GOTO, other.targetRoom, other.targetx, other.targety);
+				//slideTransition(TRANS_MODE.GOTO, other.targetRoom, other.targetx, other.targety);
 				v = 0;
 				h = 0;
 			}

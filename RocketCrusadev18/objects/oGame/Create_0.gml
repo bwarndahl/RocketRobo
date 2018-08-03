@@ -1,4 +1,3 @@
-/// @description Set Font
 enum gameStates
 {
 	MENU,
@@ -6,5 +5,13 @@ enum gameStates
 }
 gameState = gameStates.PLAY;
 
-defaultx = 707;
-defaulty = 917;
+
+if(room == rTesting)
+{
+	defaultx = 500;
+	defaulty = 500;	
+}
+
+once = false;
+global.xPos = defaultx;
+global.yPos = defaulty;

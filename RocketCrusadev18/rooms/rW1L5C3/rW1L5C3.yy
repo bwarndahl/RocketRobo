@@ -7,41 +7,15 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "3a5fd830-b5ad-4f6d-ae79-190b1829e01a"
+
     ],
     "IsDnD": false,
     "layers": [
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "lGame",
-            "id": "e842e8f7-6bf6-4591-a89d-8f60157cabec",
-            "depth": -99,
-            "grid_x": 16,
-            "grid_y": 16,
-            "hierarchyFrozen": false,
-            "hierarchyVisible": true,
-            "inheritLayerDepth": false,
-            "inheritLayerSettings": false,
-            "inheritSubLayers": false,
-            "inheritVisibility": false,
-            "instances": [
-{"name": "inst_510AEC95","id": "3a5fd830-b5ad-4f6d-ae79-190b1829e01a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_510AEC95","objId": "0be618fd-53f7-4436-b29e-f13f887d6ff3","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 16,"y": 0}
-            ],
-            "layers": [
-
-            ],
-            "m_parentID": "00000000-0000-0000-0000-000000000000",
-            "m_serialiseFrozen": false,
-            "modelName": "GMRInstanceLayer",
-            "mvc": "1.0",
-            "userdefined_depth": true,
-            "visible": true
-        },
-        {
-            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "lGauntletR",
             "id": "1c7af0cd-ff17-4a3d-a358-3d20ca9a1397",
-            "depth": -67,
+            "depth": -201,
             "grid_x": 16,
             "grid_y": 16,
             "hierarchyFrozen": false,
@@ -67,7 +41,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "lPlayerHead",
             "id": "9e8499ab-04b2-42c8-9c17-4d2e96708a36",
-            "depth": -35,
+            "depth": -101,
             "grid_x": 16,
             "grid_y": 16,
             "hierarchyFrozen": false,

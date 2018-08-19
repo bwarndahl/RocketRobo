@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oSmallTeleporter",
     "eventList": [
-        
+        {
+            "id": "f0e3aa9e-c6ed-4f6a-8076-5f34ab11cfe5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d7273189-601b-42ce-a4d4-9b2583e034b3"
+        },
+        {
+            "id": "d2279ead-a3a3-456a-821a-1d18eb0f339f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "d7273189-601b-42ce-a4d4-9b2583e034b3"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

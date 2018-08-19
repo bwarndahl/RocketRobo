@@ -338,8 +338,5 @@ else
 	hasControl = true;
 }
 
-if(room != rPause)
-{
-	global.xPos = x;
-	global.yPos = y;
-}
+global.xPos = x;
+global.yPos = y;

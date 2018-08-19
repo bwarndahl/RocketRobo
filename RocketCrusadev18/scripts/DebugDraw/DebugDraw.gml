@@ -1,4 +1,4 @@
-// @arg variable
+/// @param float  Number to be displayed 
 
 a = argument0;
 

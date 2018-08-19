@@ -17,22 +17,17 @@ if(mode == TRANSITION.GROW)
 		shrink = grow+sizeFix2;
 		grow = 0;
 		mode = TRANSITION.SHRINK;
-		room_goto(rHub);
+		room_restart();
+		instance_activate_all();
+		global.pause = false;
 	}
 }
 	
 if(mode == TRANSITION.SHRINK)
 {
-	if(room != rPause)
-	{
-		oGame.once = false;
-		room_persistent = false;
-		room_restart();	
-	}
-	
 	if(shrink > 0)
 	{
-		shrink-=rate;
+		shrink-=rate2;
 		if(instance_exists(oPlayer))
 		{
 			draw_circle_color(oPlayer.x,oPlayer.y,shrink, $461D99, $461D99, false);
@@ -46,10 +41,5 @@ if(mode == TRANSITION.SHRINK)
 	{
 		shrink = 0;
 		mode = TRANSITION.NONE;
-		if(global.RoomBeforePause != -1)
-		{
-			global.RoomBeforePause = -1;
-			sprite_delete(global.PauseScreenShot);
-		}
 	}
 }

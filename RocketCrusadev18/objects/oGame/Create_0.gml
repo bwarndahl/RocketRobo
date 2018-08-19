@@ -1,19 +1,17 @@
-enum gameStates
+/// @description Game
+
+//Spawning
+if(instance_exists(oPosition))
 {
-	MENU,
-	PLAY
+	defaultx = oPosition.x;
+	defaulty = oPosition.y;
 }
-gameState = gameStates.PLAY;
-
-
-if(room == rHub)
+else
 {
-	defaultx = 588;
-	defaulty = 822;	
+	defaultx = 0;
+	defaulty = 0;
 }
 
-once = false;
-global.xPos = defaultx;
-global.yPos = defaulty;
-
+//Memory
 metal = 0;
+seconds = 0;

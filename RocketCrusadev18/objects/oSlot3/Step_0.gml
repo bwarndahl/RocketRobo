@@ -1,0 +1,76 @@
+/// @description Hub Room
+
+if(file_exists("savedgame3.sav"))
+{
+	image_index = 1;
+}
+else
+{
+	image_index = 0;	
+}
+
+if(oDelete.delete == false)
+{
+	if (position_meeting(mouse_x,mouse_y,self))
+	{
+		if (mouse_check_button(mb_left))
+		{
+			image_alpha = 0.5;
+		}
+	
+		if( mouse_check_button_released(mb_left))
+		{
+			image_alpha = 1;
+			audio_stop_all();
+			global.file = 3;
+			LoadGame();
+			room_goto(rHub); //rHub
+		}
+	
+	}
+	else
+	{
+		image_alpha = 1;	
+	}
+}
+else
+{
+	if (position_meeting(mouse_x,mouse_y,self))
+	{
+		image_blend = c_red;
+	
+		if (mouse_check_button(mb_left))
+		{
+			image_alpha = 0.5;
+		}
+	
+		if(mouse_check_button_released(mb_left))
+		{
+			image_alpha = 1;
+			if(!instance_exists(oCheck))
+			{
+				instance_create(0,-8,oCheck);
+			}
+			if(!instance_exists(oYes))
+			{
+				instance_create(528,48,oYes);
+			}
+			if(!instance_exists(oNo))
+			{
+				instance_create(648,48,oNo);
+			}
+			
+			red = true;
+			oSlot1.red = false;
+			oSlot2.red = false;
+		}
+	}
+	else
+	{
+		if(red == false)
+		{
+			image_blend = c_white;	
+			image_alpha = 1;
+		}	
+	}
+}

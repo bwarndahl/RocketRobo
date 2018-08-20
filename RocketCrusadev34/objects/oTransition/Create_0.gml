@@ -1,4 +1,5 @@
 /// @desc Variables
+display_set_gui_size(room_width, room_height);
 
 w = display_get_gui_width();
 h = display_get_gui_height();

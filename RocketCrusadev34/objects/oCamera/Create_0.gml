@@ -19,10 +19,13 @@ angle = 0;
 shake_length = 0;
 shake_magnitude = 0;
 shake_remain = 0;
-buff = 32;
 
 count = 0;
 
+xCam = camera_get_view_x(view_camera[0]);
+yCam = camera_get_view_y(view_camera[0]);
+
+mag = 2;
 
 //Global Shake Variables
 

@@ -8,6 +8,7 @@ hasControl = true;
 onGround = false;
 grounded = 0;
 canJump = 0; //Jump Buffer
+firstGround = false;
 dJump = false;
 
 onFloor = false;

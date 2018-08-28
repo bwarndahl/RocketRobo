@@ -12,7 +12,7 @@ else
 
  if (collide != oldCollide)
  {
-	oPlayer.grav = 1;
+	oPlayer.grav = 0.5;
  }
 
 oldCollide = collide;

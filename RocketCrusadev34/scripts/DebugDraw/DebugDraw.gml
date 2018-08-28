@@ -1,4 +1,4 @@
-///DebugDraw(argument0);
+//// @param float Number to be displayed
 
 a = argument0;
 

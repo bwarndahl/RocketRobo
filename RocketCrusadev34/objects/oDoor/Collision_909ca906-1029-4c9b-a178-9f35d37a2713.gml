@@ -3,12 +3,13 @@ with (oPlayer)
 {
 	if (hasControl)
 	{
-		if (kDown) && (onGround) && (oTransition.mode = TRANS_MODE.OFF)
+		if (kDown) && (onGround) && (oTransition.mode == TRANSITION.NONE)
 		{
 			if (other.dstate = doorStates.UNLOCKED) && (other.delay)
 			{
 				hasControl = false;
-				slideTransition(TRANS_MODE.GOTO, other.targetRoom, other.targetx, other.targety);
+				
+				//slideTransition(TRANS_MODE.GOTO, other.targetRoom, other.targetx, other.targety);
 				v = 0;
 				h = 0;
 			}

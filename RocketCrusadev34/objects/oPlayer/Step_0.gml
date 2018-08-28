@@ -33,11 +33,18 @@ if (onGround) {
     tempFric  = groundFric;
 	respawnx = x;
 	respawny = y - 2;
+	firstGround = true;
 } else {
 	if (canJump > 0) canJump--
 	grounded = 0;
     tempAccel = airAccel;
     tempFric  = airFric;
+	if(firstGround == false)
+	{
+		respawnx = x;
+		respawny = y;
+		firstGround = true;
+	}
 }
 
 // Stick to wall //////////////////////////////////////////////////////////////
@@ -493,3 +500,6 @@ else if(state != states.TAUNT)
 
 /* */
 /*  */
+
+global.xPos = x;
+global.yPos = y;

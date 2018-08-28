@@ -1,10 +1,9 @@
 /// @description Restart & Close
-if(!instance_exists(oCursor)) instance_create_layer(mouse_x, mouse_y, "lCursor", oCursor)
+
 // Initialize Input Variables
 var kTest, kMute;
 
 //kRestart   = keyboard_check_pressed(ord("R"));
-kTest      = keyboard_check_pressed(ord("R"));
 kMute      = keyboard_check_pressed(ord("M"))
 
 // Restart application
@@ -13,7 +12,6 @@ kMute      = keyboard_check_pressed(ord("M"))
 
 
 // For Testing Purposes
-if (kTest) slideTransition(TRANS_MODE.RESTART);
 	
 if (kMute)
 {
@@ -34,9 +32,11 @@ if(!instance_exists(oCamera))
 }
 */
 
-if(!instance_exists(oPlayer))
+if(gameState == gameStates.PLAY)
 {
-	instance_create_layer(defaultx, defaulty, "lPlayer", oPlayer);	
+	if(!instance_exists(oCursor)) instance_create_layer(mouse_x, mouse_y, "lCursor", oCursor);
+	if(!instance_exists(oPlayer)) instance_create_layer(defaultx, defaulty, "lPlayer", oPlayer);
 }
+
 
 //if (!instance_exists(oPlayer)) && (gameState = gameStates.PLAY) instance_create_layer(defaultx, defaulty, "lPlayer", oPlayer);

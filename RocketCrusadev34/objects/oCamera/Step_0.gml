@@ -1,6 +1,10 @@
 /// @description Insert description here
-/*
-var scale = 2;
+
+var scale = mag; //Greater than 1.75?
+if(keyboard_check_released(ord("E")))
+{
+	mag-=.01;	
+}
 
 var w = window_get_width() / scale; 
 var h = window_get_height() / scale;
@@ -14,8 +18,11 @@ view_set_hport(0, h);
 
 camera_set_view_size(cam, view_wport[0], view_hport[0]);
 
-surface_resize(application_surface, w, h);
-*/
+
+if(global.pause == false && oTransition.mode == TRANSITION.NONE)
+{
+	surface_resize(application_surface, w, h);
+}
 
 
 if(instance_exists(follow))
@@ -60,12 +67,16 @@ if(instance_exists(follow))
 	}
 
 	//Update Object Position
-	x += (xTo - x) / 10;
-	y += (yTo - y) / 10;
-
-	//Clamp
-	x = clamp(x,0+view_w_half+buff,room_width-view_w_half-buff); //-80  camera_get_view_width(view_camera[0])/2
-	y = clamp(y,0+view_h_half+buff,room_height-view_h_half-buff); //-50
+	if(oTransition.mode == TRANSITION.NONE)
+	{
+		x += (xTo - x) / 10;
+		y += (yTo - y) / 10;
+	}
+	else
+	{
+		x += (xTo-x);
+		y += (yTo-y);
+	}
 
 	//Screen Shake
 	x += random_range(-shake_remain,shake_remain);
@@ -73,9 +84,16 @@ if(instance_exists(follow))
 	shake_remain = max(0,shake_remain - ((1/shake_length)*shake_magnitude));
 
 	//Update Camera View
-	camera_set_view_pos(cam,x - view_w_half,y - view_h_half);
+	camera_set_view_pos(view_camera[0],x - view_w_half,y - view_h_half);
 	
-	//Prevents Dock from Appearing
+	//Clamp
+	if(camera_get_view_x(view_camera[0]) < 0) camera_set_view_pos(view_camera[0],0,camera_get_view_y(view_camera[0]));
+	if(camera_get_view_x(view_camera[0]) > room_width-camera_get_view_width(view_camera[0])) camera_set_view_pos(view_camera[0],room_width-camera_get_view_width(view_camera[0]),camera_get_view_y(view_camera[0]));
+	if(camera_get_view_y(view_camera[0]) < 0) camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),0);
+	if(camera_get_view_y(view_camera[0]) > room_height-camera_get_view_height(view_camera[0])) camera_set_view_pos(view_camera[0],camera_get_view_x(view_camera[0]),room_height-camera_get_view_height(view_camera[0]));
+}
+
+//Prevents Dock from Appearing
 	if(window_get_height()-2 <= window_mouse_get_y())
 	{
 		window_mouse_set(window_mouse_get_x(),window_get_height()-3);	
@@ -90,5 +108,3 @@ if(instance_exists(follow))
 	{
 		window_mouse_set(3,window_mouse_get_y());	
 	}	
-	
-}

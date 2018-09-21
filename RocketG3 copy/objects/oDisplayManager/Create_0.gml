@@ -51,3 +51,4 @@ view_h = ideal_height;
 //room_goto_next();
 
 //camera_set_view_size(view_camera[0],view_w,view_h);
+

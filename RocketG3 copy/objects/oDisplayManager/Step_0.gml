@@ -27,8 +27,14 @@ if(keyboard_check_pressed(ord("Z"))) //&& (!window_get_fullscreen()))
 //if(window_get_fullscreen()) zoom = 1;
 
 //Follow Camera
+
+
+
+
+
 view_x = oCamera.x - view_w/2;
 view_y = oCamera.y - view_h/2;
 
-view_x = clamp(view_x,0,room_width-view_w);
-view_y = clamp(view_y,0,room_height-view_h);
+//view_x = clamp(view_x,0,room_width-view_w);
+//view_y = clamp(view_y,0,room_height-view_h);
+

@@ -5,13 +5,17 @@ draw_set_halign(fa_center);
 
 draw_set_font(fontAng)
 
-/*
+
 if(instance_exists(oPlayer))
 {
-	DebugDraw(window_mouse_get_y());
+	//DebugDraw(view_w);
+	DebugDraw(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0]));
+	//DebugDraw(room_width);
+	//DebugDraw(window_mouse_get_y());
 	//DebugDraw(window_get_height());
-}
 
+}
+/*
 	//if(instance_exists(oPlayer)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) - 15, __view_get( e__VW.YView, 0 ) + 340, string_hash_to_newline(string(oDisplayManager.height_resize)));
 	//if(instance_exists(oDoor)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) + 15, __view_get( e__VW.YView, 0 ) + 40, string_hash_to_newline(string(oDoor.dstate)));
 	if(instance_exists(oDisplayManager)) draw_text(__view_get( e__VW.XView, 0 ) + 4 + (8 * 11) - 15, __view_get( e__VW.YView, 0 ) + 250, string_hash_to_newline(string(view_w)));

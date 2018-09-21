@@ -17,7 +17,6 @@ camera_set_view_size(cam, view_wport[0], view_hport[0]);
 surface_resize(application_surface, w, h);
 */
 
-
 if(instance_exists(follow))
 {
 	if(count == 0)
@@ -64,8 +63,11 @@ if(instance_exists(follow))
 	y += (yTo - y) / 10;
 
 	//Clamp
-	x = clamp(x,0+view_w_half+buff,room_width-view_w_half-buff); //-80  camera_get_view_width(view_camera[0])/2
-	y = clamp(y,0+view_h_half+buff,room_height-view_h_half-buff); //-50
+	//x = clamp(x,0+view_wport[0]/2,room_width-view_wport[0]/2);
+	//y = clamp(y,0+view_hport[0]/2,room_height-view_hport[0]/2);
+	
+	//x = clamp(x,0+view_w_half+buff,room_width-view_w_half-buff); //-80  camera_get_view_width(view_camera[0])/2
+	//y = clamp(y,0+view_h_half+buff,room_height-view_h_half-buff); //-50
 
 	//Screen Shake
 	x += random_range(-shake_remain,shake_remain);
@@ -73,7 +75,7 @@ if(instance_exists(follow))
 	shake_remain = max(0,shake_remain - ((1/shake_length)*shake_magnitude));
 
 	//Update Camera View
-	camera_set_view_pos(cam,x - view_w_half,y - view_h_half);
+	//camera_set_view_pos(cam,x - view_w_half,y - view_h_half);
 	
 	//Prevents Dock from Appearing
 	if(window_get_height()-2 <= window_mouse_get_y())

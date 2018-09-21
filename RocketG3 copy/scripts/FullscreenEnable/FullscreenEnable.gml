@@ -15,6 +15,7 @@ with(oDisplayManager)
 	ideal_width = round(ideal_height*aspect_ratio);
 	//ideal_height=round(ideal_width / aspect_ratio);
 
+	
 	//Perfect Pixel Scaling
 	if(display_width mod ideal_width != 0)
 	{
@@ -26,12 +27,15 @@ with(oDisplayManager)
 	  var d = round(display_height/ideal_height);
 	  ideal_height = display_height/d;
 	}
+	
 
 	//Check for odd numbers
 	if(ideal_width & 1)
 	  ideal_width++;
 	if(ideal_height & 1)
 	  ideal_height++;
+	  
+	  
     
 	//Calculate Max Zoom
 	//max_zoom=floor(display_width/ideal_width)-1;  
@@ -39,13 +43,16 @@ with(oDisplayManager)
 	window_set_size(ideal_width*zoom,ideal_height*zoom);
 	surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
 	display_set_gui_size(ideal_width,ideal_height);
+	
   
 	alarm[0] = 1;
 
-	camera = camera_create();
-	globalvar view_x,view_y,view_w,view_h;
-	view_x = 0;
-	view_y = 0;
+	//camera = camera_create();
+	//globalvar view_x,view_y,view_w,view_h;
+	
+	//view_x = 0;
+	//view_y = 0;
+	
 	view_w = ideal_width;
 	view_h = ideal_height;
 

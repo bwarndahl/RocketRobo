@@ -2,7 +2,7 @@
 x = mouse_x;
 y = mouse_y;
 			
-if(Cstate = Cstates.PLAY)
+if(Cstate == Cstates.PLAY)
 {
 	if(oPlayer.state != states.RESPAWN)
 	{

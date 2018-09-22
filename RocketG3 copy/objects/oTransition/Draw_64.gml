@@ -3,9 +3,24 @@
 //Get camera coords.
 var cx = camera_get_view_x(view_camera[0]);
 var cy = camera_get_view_y(view_camera[0]);
+
 ///Make the adjustment to GUI.
-var xx = (oPlayer.x-cx)//*display_scalex;
-var yy = (oPlayer.y-cy)//*display_scaley;
+if(instance_exists(oPlayer))
+{
+	var xx = (oPlayer.x-cx)//*display_scalex;
+	var yy = (oPlayer.y-cy)//*display_scaley;
+}
+else if(oGame.gameState == gameStates.PAUSE)
+{
+	var xx = (oGame.xPosition-cx);
+	var yy = (oGame.yPosition-cy);
+}
+else
+{
+	var xx = (room_width/2)-cx;
+	var yy = (room_height/2)-cy;
+}
+
 
 
 //draw_circle(oPlayer.x, oPlayer.y, 10, true);

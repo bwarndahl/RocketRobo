@@ -46,9 +46,17 @@ if(type = TRANS_TYPE.CIRCLE)
 				break;
 			}
 		
-			case TRANS_MODE.RESTART:
+			case TRANS_MODE.RESET:
 			{
 				game_restart();
+				break;
+			}
+			
+			case TRANS_MODE.RESTART:
+			{
+				mode = TRANS_MODE.INTRO;
+				global.pause = false;
+				room_restart();
 				break;
 			}
 		}

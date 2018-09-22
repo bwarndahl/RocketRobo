@@ -8,8 +8,9 @@ draw_set_font(fontAng)
 
 if(instance_exists(oPlayer))
 {
+	DebugDraw(instance_number(oPlayer));
 	//DebugDraw(view_w);
-	DebugDraw(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0]));
+	//DebugDraw(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0]));
 	//DebugDraw(room_width);
 	//DebugDraw(window_mouse_get_y());
 	//DebugDraw(window_get_height());

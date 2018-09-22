@@ -7,8 +7,8 @@ if (room = targetRoom) && (instance_exists(oPlayer)) && (hasKey) && (!instance_e
 }
 */
 
-if (room = targetRoom) && (!instance_exists(oPlayer))
+if (room == targetRoom) && (!instance_exists(oPlayer) && oGame.gameState == gameStates.PLAY)
 {
-	instance_create_layer(targetx, targety, "lPlayer", oPlayer);
+		instance_create_layer(targetx, targety, "lPlayer", oPlayer);
 		//if (!instance_exists(oCamera)) instance_create_layer(other.x,other.y,"lGame",oCamera);
 }

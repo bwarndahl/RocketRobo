@@ -989,6 +989,25 @@
             }
         },
         {
+            "Key": "25d09e3c-2c9e-4916-a4be-c1e9f33732f7",
+            "Value": {
+                "id": "d363bbda-7bce-4c4d-839d-ba60c0d79a61",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oZoomedIn\/oZoomedIn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "261e35cf-ced2-4c94-b6ea-c9ff49a85aac",
             "Value": {
                 "id": "1527f36c-464e-4830-a3a5-79632147181b",
@@ -2087,6 +2106,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/sParticle\/sParticle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "60f014e9-d946-45aa-a5c1-3e104f157f34",
+            "Value": {
+                "id": "8cf0f96c-21fa-427b-b13a-1eea879c0553",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sZoomedIn\/sZoomedIn.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4732,6 +4770,25 @@
             }
         },
         {
+            "Key": "f148e340-d0fd-426d-8b66-52760802ca55",
+            "Value": {
+                "id": "4c202389-d3de-4cb8-b53e-c8e8796c36ec",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sZoomedOut\/sZoomedOut.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f3a71345-14ea-4869-9122-ed0615a92e4f",
             "Value": {
                 "id": "b608c5f1-545e-43c6-82fc-0d1428ece4f7",
@@ -4747,6 +4804,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/oCloud\/oCloud.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f3bd7f56-5d48-43cd-86b4-63c6abc57bb0",
+            "Value": {
+                "id": "c34db4af-cddb-421e-814d-33951a073d1f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oZoomedOut\/oZoomedOut.yy",
                 "resourceType": "GMObject"
             }
         },

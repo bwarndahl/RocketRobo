@@ -20,3 +20,4 @@ global.xPos = 0;
 global.yPos = 0;
 global.pause = false;
 global.file = 0;
+global.zoom = false;

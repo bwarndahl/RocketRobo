@@ -9,4 +9,14 @@ if(!instance_exists(oTransition))
 }
 
 oGame.gameState = gameStates.PLAY;
+
+if(global.zoom)
+{
+	FullscreenEnable(550);
+}
+else
+{
+	FullscreenEnable(880);
+}
+
 SaveGame();

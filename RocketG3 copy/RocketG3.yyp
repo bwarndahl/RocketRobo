@@ -4770,25 +4770,6 @@
             }
         },
         {
-            "Key": "f148e340-d0fd-426d-8b66-52760802ca55",
-            "Value": {
-                "id": "4c202389-d3de-4cb8-b53e-c8e8796c36ec",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "sprites\/sZoomedOut\/sZoomedOut.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "f3a71345-14ea-4869-9122-ed0615a92e4f",
             "Value": {
                 "id": "b608c5f1-545e-43c6-82fc-0d1428ece4f7",
@@ -4804,25 +4785,6 @@
                     "default"
                 ],
                 "resourcePath": "objects\/oCloud\/oCloud.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "f3bd7f56-5d48-43cd-86b4-63c6abc57bb0",
-            "Value": {
-                "id": "c34db4af-cddb-421e-814d-33951a073d1f",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/oZoomedOut\/oZoomedOut.yy",
                 "resourceType": "GMObject"
             }
         },

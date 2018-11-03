@@ -26,6 +26,7 @@ if(room != rMenu && oTransition.mode = TRANS_MODE.OFF)
 		instance_activate_object(oGame);
 		instance_activate_object(global.PauseScreenShot);
 		instance_create_depth(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,-999,oRestartLevel);
+		instance_create_depth(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/4,-999,oZoomedIn);
 		instance_create_depth(mouse_x,mouse_y,-1000,oMouse);
 	}
 	else if(global.pause == true && keyboard_check_released(ord("P")))
@@ -42,6 +43,20 @@ if(room != rMenu && oTransition.mode = TRANS_MODE.OFF)
 		{
 			instance_destroy(oMouse);
 		}
+		
+		if(instance_exists(oZoomedIn))
+		{
+			instance_destroy(oZoomedIn);	
+		}
+		
 		global.pause = false;
+		if(global.zoom)
+		{
+			FullscreenEnable(550);
+		}
+		else
+		{
+			FullscreenEnable(880);
+		}
 	}
 }

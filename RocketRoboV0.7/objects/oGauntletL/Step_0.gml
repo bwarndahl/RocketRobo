@@ -267,9 +267,22 @@ if(place_meeting(x+h, y+v, oParSolid))
 {
 	if (isActive)
 	{
-		instance_create(x,y,oExplosion);
-		with (oPlayer) alarm[10] = 60;
-		instance_destroy();
+		if(GstateL = Gstates.ROCKET)
+		{
+			instance_create(x,y,oExplosion);
+			with (oPlayer) alarm[10] = 60;
+			instance_destroy();
+		}
+		
+		if(GstateL = Gstates.GRAB)
+		{
+			var i;
+			for (i = 0; i < 4; ++i)
+			with (instance_create(x, y, oParticle))
+			direction = random_range(0, 360);
+		
+			instance_destroy();
+		}
 	}
 }
 

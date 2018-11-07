@@ -5,9 +5,6 @@ if (GstateL= Gstates.ROCKET) || (GstateL= Gstates.GRAB) || (GstateL= Gstates.RIC
 
 if(oPlayer.hasControl)
 {
-
-//with (oPlayer)
-//{
 // Shoot //////////////////////////////////////////////////////////////////////
 #region Left Click
 if (GstateL= Gstates.INACTIVE) && (oPlayer.canShoot) {
@@ -85,6 +82,7 @@ if (GstateL = Gstates.INACTIVE) && (oPlayer.canShoot)
 	}
 }
 #endregion
+
 } //////////////// hasControl  ///////////////////
 
 #region Looking & State Code
@@ -153,7 +151,6 @@ if(GstateL= Gstates.INACTIVE)
 #endregion
 
 
-
 if(oPlayer.state = states.GRAB) && (!isActive)
 {
 	xTo = oPlayer.x + (xoffset * sign(oPlayer.facing)) + 16;
@@ -162,7 +159,6 @@ if(oPlayer.state = states.GRAB) && (!isActive)
 	y = oPlayer.y + yoffset;
 }
 
-///Trail
 
 #region isActive
 if(isActive)
@@ -265,6 +261,7 @@ else image_alpha = 1;
 
 h = (lengthdir_x(speed,direction));
 v = (lengthdir_y(speed,direction));
+
 if(place_meeting(x+h, y+v, oParSolid))
 {
 	if (isActive)

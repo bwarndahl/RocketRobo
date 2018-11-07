@@ -1,4 +1,7 @@
-if(hasControl){
+/// @desc Controls, Movement, & States
+
+if(hasControl)
+{
 // Input //////////////////////////////////////////////////////////////////////
 
 kLeft        = keyboard_check(ord("A"));
@@ -18,11 +21,7 @@ angle = point_direction(x, y, mouse_x, mouse_y)
 
 ///////////////////////////////////////////////////////////////////////////////
 
-// Reset Body Part Coords
-// oPlayerHead.x = x
-// oPlayerHead.y = y - 2
-
-dTrack = dJump; //Track whether double jump has changed
+dTrack = dJump; // Track whether double jump has changed
 
 // Which form of accel/fric to apply
 if (onGround) {
@@ -397,6 +396,12 @@ if(kTaunt) && (onGround) //&& (tauntCount == 0)
 }
 
 } ///////////////////////////////////////////////  hasControl  //////////////////////////////////////////////////////////
+else
+{
+	//h = 0;
+	//v = 0;
+}
+
 
 #region Looking Code
 if (angle > 60 && 120 > angle)

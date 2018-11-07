@@ -26,7 +26,7 @@ buff = 32;
 count = 0;
 
 layerx = 0;
-layerhspeed = 1;
+layerh = 0;
 
 //Global Shake Variables
 

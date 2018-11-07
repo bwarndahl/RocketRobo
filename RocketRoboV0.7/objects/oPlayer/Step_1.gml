@@ -1,3 +1,4 @@
+/// @desc onGround & Relative Collision Checks
 var temp;
 
 // Check if you were onGround previous frame

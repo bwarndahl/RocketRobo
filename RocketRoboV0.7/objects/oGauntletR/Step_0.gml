@@ -1,12 +1,9 @@
-/// @desc ?
-//xTo = oPlayer.x - (xoffset * sign(oPlayer.facing)) + 20;
+/// @desc State & Looking Code
 distx = point_distance(x, y, oPlayer.x - (6 * sign(oPlayer.facing)),oPlayer.y);
 if (Gstate = Gstates.ROCKET) || (Gstate = Gstates.GRAB) || (Gstate = Gstates.RICOCHET) isActive = true;
 
 if(oPlayer.hasControl)
 {
-// Shoot //////////////////////////////////////////////////////////////////////
-
 #region Left Click
 if (Gstate = Gstates.INACTIVE) && (instance_exists(oGauntletR))
 {
@@ -196,6 +193,7 @@ if(isActive)
 }
 #endregion
 
+
 #region RICOCHET
 if(Gstate = Gstates.RICOCHET)
 {
@@ -203,6 +201,7 @@ if(Gstate = Gstates.RICOCHET)
 	image_angle += 45;
 }
 #endregion
+
 
 #region RUN
 if(Gstate = Gstates.RUN) && (count > 0)

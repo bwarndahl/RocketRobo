@@ -103,13 +103,13 @@ if(layer_exists("BG_Mountains"))
 
 if(layer_exists("BG_Clouds"))
 {
-	//layer_x("BG_Clouds",view_x/2+layer_get_hspeed("BG_Clouds"));
-	layerx = (view_x * 0.4) - layerhspeed;
-	layer_x("BG_Clouds", layerx); // Change the background layer name to whatever you use in the room editor
-	//layer_x("BG_Clouds", layer_get_x("BG_Clouds") - 1);
-	layer_y("BG_Clouds", (view_y + 2500) * 0.4);
+	layerh += 0.5;
+	if(layerh > sprite_get_width(sBGClouds)) layerh = 0;
 	
-	layer_hspeed("BG_Clouds",-1);
+	layerx = (view_x * 0.4) - layerh;
+	layer_x("BG_Clouds", layerx); // Change the background layer name to whatever you use in the room editor
+	
+	layer_y("BG_Clouds", (view_y + 2500) * 0.4);
 }
 
 if(layer_exists("BG_Suns"))

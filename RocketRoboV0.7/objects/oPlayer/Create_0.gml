@@ -11,6 +11,7 @@ canJump = 0; //Jump Buffer
 dJump = false;
 
 onFloor = false;
+
 // Create Body Parts
 if(!instance_exists(oPlayerHead)) instance_create_layer(x,y,"lPlayerHead",oPlayerHead);
 if(!instance_exists(oPlayerBody)) instance_create_layer(x,y,"lPlayer",oPlayerBody);
@@ -18,7 +19,6 @@ if(!instance_exists(oGauntletR)) instance_create_layer(x,y,"lGauntletR",oGauntle
 if(!instance_exists(oGauntletL)) instance_create_layer(x,y,"lGauntletL",oGauntletL);
 
 // Input //////////////////////////////////////////////////////////////////////
-
 kLeft        = 0;
 kRight       = 0;
 kUp          = 0;
@@ -29,13 +29,6 @@ kJumpHeld    = 0;
 
 kRClick		 = 0;
 
-// Camera (later versions) ////////////////////////////////////////////////////
-if (!instance_exists(oCamera))
-    instance_create(x, y, oCamera);
-    
-// Initial camera position  
-//__view_set( e__VW.XView, 0, max(0, min(x - __view_get( e__VW.WPort, 0 ) * 0.5, room_width  - __view_get( e__VW.WPort, 0 ) )));
-//__view_set( e__VW.YView, 0, max(0, min(y - __view_get( e__VW.HPort, 0 ) * 0.5 - 16, room_height - __view_get( e__VW.HPort, 0 ) )));
 
 // Movement Vars //////////////////////////////////////////////////////////////
 
@@ -69,10 +62,9 @@ camDist     = 24.0; // (later versions)
 
 // Frames prior to being able to push off of wall slide with arrow keys (doesn't affect wall jump)
 clingTime   = 4.0  * m;
-///////////////////////////////////////////////////////////////////////////////
+
 
 // State Info /////////////////////////////////////////////////////////////////
-
 enum states
 {
 	IDLE,
@@ -110,26 +102,29 @@ look = looking.UP;
 RIGHT =  1;
 LEFT  = -1;
 
+
 // Initialize properties
 states  = states.IDLE;
 facing = image_xscale; // Change xscale in editor to adjust initial facing
 
+
 // For squash + stretch
 xscale = 1;
 yscale = 1;
-///////////////////////////////////////////////////////////////////////////////
+
 
 // Misc ///////////////////////////////////////////////////////////////////////
-
 // Relative collision checks
 cLeft  = 0;
 cRight = 0;
 cAbove = 0;
 isSolid = true;
 
+
 // Wall slide
 canStick = true;
 sticking = false;
+
 
 // Grab
 targetx = 0;
@@ -137,7 +132,8 @@ targety = 0;
 grab_speed = 0;
 max_grab_speed = 15;
 
-///////////////////////////////////////////////////////////////////////////////
+
+/// Facing ////////////////////////////////////////////////////////////////////////////
 if (mouse_x > x)
     facing = 1;
 else
@@ -145,8 +141,8 @@ else
 
 canShoot = true;
 
-///////////////////////////////////////////////////////////////////////////////
 
+/// Miscellaneous ////////////////////////////////////////////////////////////////////////////
 xscatter = 0//6;
 yscatter = 1;
 xdrift = 0;

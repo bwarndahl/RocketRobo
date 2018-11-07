@@ -478,7 +478,7 @@
         {
             "Key": "19e71e89-bf76-4d6a-b710-8155ff4aa2d7",
             "Value": {
-                "id": "082121f2-913f-4770-a0ab-e5ceb3651900",
+                "id": "d747cb32-3bc3-4f5c-844a-904c0323f810",
                 "modelName": "GMResourceInfo",
                 "mvc": "1.0",
                 "configDeltaFiles": [
@@ -3302,7 +3302,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "scripts\/slideTransition\/slideTransition.yy",
+                "resourcePath": "scripts\/SlideTransition\/SlideTransition.yy",
                 "resourceType": "GMScript"
             }
         },

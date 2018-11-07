@@ -47,6 +47,6 @@ with(oDisplayManager)
 
 with(oTransition)
 {
-	screenWidth = view_wport[0];
-	screenHeight = view_hport[0];
+	screenWidth = display_get_width();
+	screenHeight = display_get_height();
 }

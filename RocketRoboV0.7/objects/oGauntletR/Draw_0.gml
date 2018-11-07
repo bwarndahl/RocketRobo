@@ -8,7 +8,7 @@ if(Gstate = Gstates.GRAB)
 	draw_set_alpha(1);
 	*/
 	
-	draw_line_width_color(oPlayer.x,oPlayer.y,x,y,16,c_red,c_red);
+	//draw_line_width_color(oPlayer.x,oPlayer.y,x,y,16,c_red,c_red);
 	
 	var dist = point_distance(x,y + 3,oPlayer.x,oPlayer.y + 6)
 	var dir  = point_direction(x,y + 3,oPlayer.x,oPlayer.y + 6);

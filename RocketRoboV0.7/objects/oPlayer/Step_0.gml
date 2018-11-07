@@ -504,14 +504,12 @@ if (state = states.RESPAWN)
 	if (respawnDist < 0.5)
 	{
 		state = states.IDLE;
+		hasControl = true;
+		isSolid = true;
+		
 		h = 0;
 		v = 0;
 	}
-}
-else if(state != states.TAUNT)
-{
-	//isSolid = true;
-	//hasControl = true;
 }
 #endregion
 

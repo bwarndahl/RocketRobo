@@ -8,7 +8,7 @@ with (oPlayer)
 			if (other.dstate = doorStates.UNLOCKED) && (other.delay)
 			{
 				hasControl = false;
-				slideTransition(TRANS_MODE.GOTO, other.targetRoom, other.targetx, other.targety, other.type);
+				SlideTransition(TRANS_MODE.GOTO, other.targetRoom, other.targetx, other.targety, other.type);
 				v = 0;
 				h = 0;
 			}

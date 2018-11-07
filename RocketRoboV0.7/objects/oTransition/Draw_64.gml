@@ -23,4 +23,5 @@ else if(type = TRANS_TYPE.TILE)
 	
 }
 
+//draw_circle_color(64,64,64,c_red,c_red,false);
 //in fullscreen begin script, have sections refreshing objects with gui size/window size variables

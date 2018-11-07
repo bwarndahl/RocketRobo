@@ -1,2 +1,2 @@
-draw_sprite(sprite_index, image_index, xxx, yyy);
+draw_sprite(sprite_index, image_index, xx, yy);
 

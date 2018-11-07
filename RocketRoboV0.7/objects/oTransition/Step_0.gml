@@ -69,12 +69,12 @@ if(type = TRANS_TYPE.TILE)
 	//Start Transition
 	if (fade)
 	{
-	    //Increment our timer
+	    //Increment timer
 	    timer += 1/room_speed;
     
 	    if (timer % 4)
 	    {
-	        //If our counter is less than the width of the screen, Start spawning!
+	        //If counter is less than the width of the screen, Start spawning
 	        if (counter < width) spawn = true;
 	        counter++;
 	    }
@@ -96,12 +96,12 @@ if(type = TRANS_TYPE.TILE)
 	                yy = oTransition.yy;
 	            }
 	        }
-	        //Finished spawning our objects now set spawn to false
+	        //Finished spawning objects now set spawn to false
 	        spawn = false;
 	    }
     
 	    //Screen is filled with transition objects, reset all variables
-	    if (counter-30 > width)
+	    if (counter > width)
 	    {
 	        counter = -1;
 	        fade = false;

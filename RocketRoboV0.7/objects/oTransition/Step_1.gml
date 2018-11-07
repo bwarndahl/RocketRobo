@@ -5,7 +5,8 @@ h = display_get_gui_height();
 w_half = w / 2;
 h_half = h / 2;
 
-width = (w / spritesize) + 12;
+var magic_number = 12;
+width  = (w / spritesize) + magic_number;
 height = h / spritesize;
 
 

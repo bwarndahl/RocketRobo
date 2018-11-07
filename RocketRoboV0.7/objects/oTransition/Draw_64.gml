@@ -1,5 +1,5 @@
 /// @desc Draw Circle
-if(done) draw_circle_color(64,64,64,c_red,c_red,false)
+
 //Get camera coords.
 var cx = camera_get_view_x(view_camera[0]);
 var cy = camera_get_view_y(view_camera[0]);

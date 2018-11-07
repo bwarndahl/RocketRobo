@@ -49,7 +49,8 @@ spritesize = 32;
 //screenWidth = display_get_gui_width();
 //screenHeight = display_get_gui_height();
 
-width = w / spritesize;
+var magic_number = 12
+width = (w / spritesize) + magic_number;
 height = h / spritesize;
 
 xx = 0;

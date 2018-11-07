@@ -15,4 +15,4 @@ DebugDraw(oTransition,oTransition.percent,64,300);
 DebugDraw(oTransition,oTransition.mode,128,300);
 */
 
-DebugDraw(oTransition,oTransition.counter,64,64);
+//DebugDraw(oTransition,oTransition.counter,64,64);

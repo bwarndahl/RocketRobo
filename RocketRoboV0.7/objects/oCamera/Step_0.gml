@@ -103,6 +103,7 @@ if(layer_exists("BG_Mountains"))
 
 if(layer_exists("BG_Clouds"))
 {
+	// Parallax w/ Scroll
 	layerh += 0.5;
 	if(layerh > sprite_get_width(sBGClouds)) layerh = 0;
 	

@@ -169,7 +169,7 @@ if(isActive)
 		var trailx = x + lengthdir_x(6, direction) + random_range(-1,1);
 		var traily = y + lengthdir_y(6, direction) + random_range(-1,1);
 	
-		var trail = instance_create(trailx,traily,oFireG);
+		var trail = instance_create_layer(trailx,traily,"lEffects",oFireG);
 		trail.image_angle = image_angle;
 		if(speed != maxSpeed) && (GstateL != Gstates.GRAB) speed *= 1.25; //1.5
 		

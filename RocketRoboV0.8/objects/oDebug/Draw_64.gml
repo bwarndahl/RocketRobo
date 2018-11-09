@@ -27,9 +27,9 @@ DebugDraw(oPlayer,oPlayer.h,64,128);
 DebugDraw(oPlayer,oPlayer.v,64,164);
 */
 
-/*
-DebugDraw(oPlayer,oPlayer.state,64,64);
 
+//DebugDraw(oPlayer,oPlayer.state,64,64);
+/*
 DebugDraw(oPlayer,oPlayer.xstart,64,128);
 DebugDraw(oPlayer,oPlayer.ystart,64,160);
 

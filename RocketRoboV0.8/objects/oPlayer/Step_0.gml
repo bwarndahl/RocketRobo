@@ -360,6 +360,42 @@ else
 	//v = 0;
 }
 
+#region Grab
+if(state = states.GRAB)
+{
+	hasControl = false;
+	isSolid = false;
+	
+	grab_speed = point_distance(x,y,targetx,targety);
+	grab_speed = clamp(grab_speed,6,max_grab_speed);
+	
+	var xx, yy, dir;
+	dir		= point_direction(x,y,targetx,targety); 
+	xx		= lengthdir_x(grab_speed,dir)
+	yy		= lengthdir_y(grab_speed,dir)
+	
+	x += xx;
+	y += yy;
+	
+	h = xx;
+	v = yy;
+	/*
+	if(x = targetx) && (y = targety)
+	{
+		state = states.IDLE;
+	}
+	*/
+	
+	/*
+	if(kJump)
+	{
+		state = states.IDLE;
+	}
+	*/
+}
+#endregion
+
+
 // Friction
 if (!kRight && !kLeft)
     h = Approach(h, 0, tempFric);
@@ -550,39 +586,6 @@ if (state = states.RESPAWN)
 		v = 0;
 		
 		hp = max_hp;
-	}
-}
-#endregion
-
-#region Grab
-if(state = states.GRAB)
-{
-	hasControl = false;
-	isSolid = false;
-	
-	grab_speed = point_distance(x,y,targetx,targety);
-	grab_speed = clamp(grab_speed,6,max_grab_speed);
-	
-	var xx, yy, dir;
-	dir		= point_direction(x,y,targetx,targety); 
-	xx		= lengthdir_x(grab_speed,dir)
-	yy		= lengthdir_y(grab_speed,dir)
-	
-	x += xx;
-	y += yy;
-	
-	h = xx;
-	v = yy;
-	/*
-	if(x = targetx) && (y = targety)
-	{
-		state = states.IDLE;
-	}
-	*/
-	
-	if(kJump)
-	{
-		state = states.IDLE;
 	}
 }
 #endregion

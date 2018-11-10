@@ -20,5 +20,7 @@ if(!isIntangible)
 	hasControl = false;
 	var hitstun_frames = 20;
 	alarm[2] = hitstun_frames;
+	
+	if(!hp <= 0) audio_play_sound(sfxHurt,5,false);
 }
 isIntangible = true;

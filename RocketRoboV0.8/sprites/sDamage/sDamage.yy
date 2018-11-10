@@ -2,7 +2,7 @@
     "id": "77e5c100-c7f4-48bd-b88e-cc7814ce8702",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sEnemy",
+    "name": "sDamage",
     "For3D": false,
     "HTile": false,
     "VTile": false,

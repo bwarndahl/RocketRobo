@@ -1160,6 +1160,25 @@
             }
         },
         {
+            "Key": "48bc0202-0e79-40ac-a1d6-bd1cab979791",
+            "Value": {
+                "id": "b55f9a0a-30bd-4b1e-933b-d0ff7ed87719",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sfxHurt\/sfxHurt.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4917a160-e5b2-49b1-bd49-77721d315412",
             "Value": {
                 "id": "58401b5a-8b18-45b8-a51a-35daaa2ff610",
@@ -2010,7 +2029,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/sEnemy\/sEnemy.yy",
+                "resourcePath": "sprites\/sDamage\/sDamage.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2718,6 +2737,44 @@
             }
         },
         {
+            "Key": "adc88920-bac7-4573-a201-e78623f328f7",
+            "Value": {
+                "id": "82c596f8-3960-4e1b-8cd5-417fc4dfe289",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sfxChain\/sfxChain.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "aee9b1c7-86e7-48de-97cf-2e080c504b44",
+            "Value": {
+                "id": "3b2f638d-ab47-4320-bce2-08ea3739cc9f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sEnemyPupil\/sEnemyPupil.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b1cde214-ab1e-4820-b803-b0ed11853223",
             "Value": {
                 "id": "ffe4a6fd-0490-4dec-984b-fa2a146081a3",
@@ -3057,6 +3114,25 @@
                 ],
                 "resourcePath": "sprites\/sPlatform\/sPlatform.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cb59d350-c1e0-4984-86e7-9060d740bf2d",
+            "Value": {
+                "id": "81f077f3-788c-48d3-8e96-f1e52a197fcd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/cb59d350-c1e0-4984-86e7-9060d740bf2d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3455,6 +3531,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/sPlayerJumpD\/sPlayerJumpD.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e826a614-610c-4c5a-b761-dc730d7c2fa8",
+            "Value": {
+                "id": "f22a8f6f-91a7-4cd6-80db-5b7e829327c8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sEnemyBody\/sEnemyBody.yy",
                 "resourceType": "GMSprite"
             }
         },

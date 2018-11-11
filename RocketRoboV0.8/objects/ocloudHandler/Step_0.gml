@@ -1,6 +1,8 @@
 /// @desc ?
-if (xbase < room_width + 20)
+if(instance_number(oCloud) <= 5)
 {
-	instance_create_layer(x + xbase, y + random_range(5,-5),"BG_Objects", oCloud)
-	xbase += dist;
+	show_debug_message("Active");
+	xx = room_width + 32;
+	yy = random_range(0,room_height/2);
+	instance_create_layer(xx,yy,"BG_Objects",oCloud);
 }

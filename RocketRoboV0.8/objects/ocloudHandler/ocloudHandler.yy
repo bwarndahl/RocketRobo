@@ -1,28 +1,18 @@
 {
-    "id": "739543fe-f716-4e78-aae5-49df9a8e591c",
+    "id": "63a37e0d-acf2-4634-9707-9c1a2ca0d3ee",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ocloudHandler",
+    "name": "oCloudHandler",
     "eventList": [
         {
-            "id": "0845820d-cec6-4161-9514-1e8edd3dc3ad",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "739543fe-f716-4e78-aae5-49df9a8e591c"
-        },
-        {
-            "id": "888be6cd-fe03-47e6-a6a7-10ddff7ffad1",
+            "id": "92253a23-ff02-4869-a46a-da227cfb24f8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "739543fe-f716-4e78-aae5-49df9a8e591c"
+            "m_owner": "63a37e0d-acf2-4634-9707-9c1a2ca0d3ee"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

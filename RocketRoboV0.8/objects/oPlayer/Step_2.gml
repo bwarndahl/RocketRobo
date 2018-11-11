@@ -30,11 +30,13 @@ if(isSolid)
 	    if (!place_meeting(x + sign(h), y, oParSolid))
 	        x += sign(h); 
 	    else {
+			/*
 	        // Push block
 	        if (place_meeting(x + sign(h), y, oPushBlock)) {
 	            with (instance_place(x + sign(h), y, oPushBlock))
 	                h = other.h
 	        } else
+			*/
 	            h = 0;
 	        break;
 	    }

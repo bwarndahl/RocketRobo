@@ -38,3 +38,5 @@ if(instance_exists(oGauntletRD)) DebugDraw(oGauntletRD,oGauntletRD.h,64,320);
 
 //DebugDraw(oGauntletR,oGauntletR.Gstate,64,64);
 //DebugDraw(oGauntletL,oGauntletL.GstateL,64,96);
+
+DebugDraw(oCloudHandler,instance_number(oCloud),64,64);

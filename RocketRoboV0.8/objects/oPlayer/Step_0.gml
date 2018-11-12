@@ -482,7 +482,7 @@ else if (angle > 120 && 150 > angle)
 
 
 x = clamp(x, 0 + 12, room_width);
-y = clamp(y, -35, room_height + 36);
+y = clamp(y, -72, room_height + 36);
 
 
 #region Taunt

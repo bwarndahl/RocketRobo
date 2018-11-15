@@ -1,1 +1,0 @@
-// Explode + destroy self

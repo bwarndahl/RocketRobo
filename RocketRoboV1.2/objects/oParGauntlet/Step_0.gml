@@ -69,7 +69,7 @@ if(Gstate = Gstates.INACTIVE) //&& (oPlayer.hasControl)
 
 if(oPlayer.state = states.GRAB) && (!isActive)
 {
-	xTo = oPlayer.x + (xoffset * sign(oPlayer.facing)) + 16;
+	xTo = oPlayer.x + (xoffset * sign(oPlayer.facing)) + xIdle;
 	
 	x += ((xTo - x) / spd) - xoffset;
 	y = oPlayer.y + yoffset;

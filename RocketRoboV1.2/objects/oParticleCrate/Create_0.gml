@@ -1,9 +1,27 @@
 // Randomize sprite properties ////////////////////////////////////////////////
 image_angle = random(360);
 
-image_xscale = random_range(1, 2);
-image_yscale = image_xscale;
+//image_xscale = random_range(1, 2);
+//image_yscale = image_xscale;
+if(irandom_range(0,1))
+{
+	image_yscale = -1;
+}
+
 ///////////////////////////////////////////////////////////////////////////////
 
-speed = random_range(0.5, 1.5);
+//speed = random_range(0.5, 1.5);
 
+///////////////////////////////////////////////////////////////////////////////
+
+grav = -10;
+fric = 0.5;
+hfric = 0.1;
+
+h = random_range(-8,8);
+v = random_range(4,8);
+
+///////////////////////////////////////////////////////////////////////////////
+
+fade = false;
+alarm[0] = 20;

@@ -8,7 +8,7 @@ if(Gstate = Gstates.ROCKET) || (Gstate = Gstates.RICOCHET)
 		other.eState = enemyStates.STUN;
 
 		instance_create(x,y,oExplosion);
-		with (oPlayer) alarm[10] = 60; ///Set Respawn
+		with (oPlayer) alarm[other.alarm_respawn] = 60; ///Set Respawn
 		instance_destroy();
 	}
 }

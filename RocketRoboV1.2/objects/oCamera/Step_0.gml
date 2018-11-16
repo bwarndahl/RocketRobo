@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @desc Update Camera Position, Parallax
 /*
 var scale = 2;
 
@@ -33,27 +33,21 @@ if(instance_exists(follow))
 	//Account for Mouse Angle & onGround
 	if(follow == oPlayer)
 	{
-		xoffset = point_distance(oPlayer.x,oPlayer.y,mouse_x,mouse_y) / 50;
+		xoffset = point_distance(oPlayer.x,oPlayer.y,mouse_x,mouse_y) / 75;
 		yoffset = point_distance(oPlayer.x,oPlayer.y,mouse_x,mouse_y) / 100;
 		angle = point_direction(oPlayer.x,oPlayer.y,mouse_x,mouse_y);
 
 		//if(oPlayer.onGround) yoffset -= groundoffset;
-
-		//if (0 < angle && angle < 90) || (270 <= angle && angle <= 360) xoffset = xoffset + 2;
-		//if (90 <= angle && angle <= 270) xoffset = xoffset - 2;
-		//if (20 <= angle && angle <= 160) yoffset = yoffset - 2;
-		//if (200 <= angle && angle <= 340) yoffset = yoffset + 2;
-
-		//if (oPlayer.h != 0) xoffset += facingoffset * oPlayer.facing
 		
-		//if (oPlayer.onGround)  groundoffset = Approach(groundoffset,8,2);
-		//else groundoffset = Approach(groundoffset,0,2);
+		if (oPlayer.onGround)  groundoffset = Approach(groundoffset,8,0.1);
+		else groundoffset = Approach(groundoffset,0,0.1);
+		//if(oPlayer.onGround) yoffset -= groundoffset;
 		
 		yoffset -= lookingoffset;
 
 		xMove = lengthdir_x(xoffset, angle);
 		yMove = lengthdir_y(yoffset, angle);
-		if (oPlayer.onGround) yMove += groundoffset;
+		yMove += groundoffset;
 		
 		x += xMove;
 		y -= yMove;

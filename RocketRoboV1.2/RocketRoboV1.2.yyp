@@ -1445,6 +1445,25 @@
             }
         },
         {
+            "Key": "5a41e90a-1879-4fb3-b8ab-11d8d6ff3260",
+            "Value": {
+                "id": "292a1371-094e-4d6e-b5d1-378710356c07",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/rTest4\/rTest4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "5aa6508f-6ebd-4864-a3aa-749a967cc0de",
             "Value": {
                 "id": "db44f09e-a370-488c-83ec-076f23680c1c",
@@ -2452,6 +2471,25 @@
             }
         },
         {
+            "Key": "8dd363a2-3007-437a-ad96-56a062462ca3",
+            "Value": {
+                "id": "50ac15ce-6e11-4c3d-bc42-88794cd5c972",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sPoofS\/sPoofS.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8e8775f4-bbb9-4112-b01e-e72048ed35d1",
             "Value": {
                 "id": "e44f3afe-76d0-49d2-8627-c8e0bc099c6f",
@@ -2468,6 +2506,25 @@
                 ],
                 "resourcePath": "objects\/oChest\/oChest.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8edc343b-0cdb-4e6d-8ff6-b4619036bc8f",
+            "Value": {
+                "id": "c2d77809-c39d-460e-92bf-18f99437c161",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sPoofM\/sPoofM.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2946,6 +3003,25 @@
             }
         },
         {
+            "Key": "b559438b-ecad-41ee-8857-1a8cc7af14cc",
+            "Value": {
+                "id": "ff314143-432c-456a-bd9c-23232e26a895",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oPoofS\/oPoofS.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b5c64d02-cd35-4187-8643-200814fb8f78",
             "Value": {
                 "id": "e15dfd76-e875-4497-91af-0c04ed0b412a",
@@ -3095,6 +3171,25 @@
                 ],
                 "resourcePath": "sprites\/sBlock\/sBlock.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c4d0c671-1354-4901-a990-8dd7bba6759f",
+            "Value": {
+                "id": "8770ecfc-77ac-4669-93d0-62d66f74a7ad",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/CreateParticlesCrate\/CreateParticlesCrate.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3915,25 +4010,6 @@
             }
         },
         {
-            "Key": "f533687e-f8d8-4c00-884a-ad650ef9625b",
-            "Value": {
-                "id": "c4d9d08d-be32-48f4-a013-0555e552e7ba",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/oInitialize\/oInitialize.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "f6bd1d31-46da-4fde-b93c-26bccbe93088",
             "Value": {
                 "id": "18062316-18fa-48dd-a0d7-ce84c17998a4",
@@ -3950,6 +4026,25 @@
                 ],
                 "resourcePath": "sprites\/sPoof\/sPoof.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f83a06cf-6950-49d2-9c11-d2cee6d70b77",
+            "Value": {
+                "id": "c99618db-c919-4302-ace3-0507c9a091a2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/oPoofM\/oPoofM.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -4051,6 +4146,7 @@
         "9fbec3a9-6874-4e30-9f2d-9e688560d30c",
         "cfd90524-9bf0-4195-8fd2-ff33b7c7256f",
         "5aa6508f-6ebd-4864-a3aa-749a967cc0de",
+        "c4d0c671-1354-4901-a990-8dd7bba6759f",
         "69d4d59f-6e39-4483-8934-b8019126a86d"
     ],
     "tutorial": ""

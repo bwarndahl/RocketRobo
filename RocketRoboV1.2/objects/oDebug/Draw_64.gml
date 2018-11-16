@@ -51,4 +51,6 @@ DebugDraw(oEye,oEye.afterimage_frame_count,64,128);
 //DebugDraw(oTransition, oTransition.targety, 64, 96);
 //DebugDraw(oTransition, CheckPlayer(), 64, 122)
 
-DebugDraw(oGauntletR, instance_number(oGauntletR),64,64);
+//DebugDraw(oGauntletR, instance_number(oGauntletR),64,64);
+
+//DebugDraw(oCamera,oCamera.groundoffset,64,64);

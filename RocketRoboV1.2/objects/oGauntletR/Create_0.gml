@@ -6,4 +6,6 @@ xIdle = 20;
 
 startupSFX = sfxGauntletR;
 
+alarm_respawn = 10;
+
 event_inherited();

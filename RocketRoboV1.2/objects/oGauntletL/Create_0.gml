@@ -7,5 +7,6 @@ xIdle = -20;
 startupSFX = sfxGauntletL;
 
 alarm_respawn = 11;
+chain_layer = "lGauntletL"; 
 
 event_inherited();

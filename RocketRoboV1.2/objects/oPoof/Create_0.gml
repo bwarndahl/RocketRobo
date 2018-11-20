@@ -3,7 +3,7 @@ var i;
 for(i = 0; i < 4; i += 1)
 {
 	var xx, yy, obj, offset;
-	offset = 32;
+	offset = 24;
 	xx = x + random_range(-offset,offset);
 	yy = y + random_range(-offset,offset);
 	

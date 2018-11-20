@@ -14,7 +14,7 @@ if(Gstate = Gstates.GRAB)
 	{
 		if(i/5 = 1)
 		{
-			with(instance_create_layer(x - 1,y + 12,"lGauntletR",oChain))
+			with(instance_create_layer(x - 1,y + 12,chain_layer,oChain))
 			{
 				parent = other;
 				origin = i;

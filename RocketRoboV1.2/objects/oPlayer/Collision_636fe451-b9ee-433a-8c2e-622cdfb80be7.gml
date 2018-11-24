@@ -11,7 +11,7 @@ if(!isIntangible) && (!other.isIntangible)
 	h = -hh;
 	v = -vv;
 	
-	
+	isIntangible = true;
 	var intang_frames = 20;
 	alarm[1] = intang_frames;
 
@@ -23,4 +23,3 @@ if(!isIntangible) && (!other.isIntangible)
 	
 	if(!hp <= 0) audio_play_sound(sfxHurt,5,false);
 }
-isIntangible = true;

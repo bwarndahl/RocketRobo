@@ -54,3 +54,11 @@ DebugDraw(oEye,oEye.afterimage_frame_count,64,128);
 //DebugDraw(oGauntletR, instance_number(oGauntletR),64,64);
 
 //DebugDraw(oCamera,oCamera.groundoffset,64,64);
+
+/*
+if(instance_exists(oDisplayManager))
+{
+	DebugDraw(oDisplayManager,view_w,64,64);
+	DebugDraw(oDisplayManager,view_h,64,96);
+}
+*/

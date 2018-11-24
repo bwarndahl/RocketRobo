@@ -110,7 +110,7 @@ if(layer_exists("BG_Clouds"))
 if(layer_exists("BG_Suns"))
 {
 	layer_x("BG_Suns",(view_x * 0.8) + 400);
-	layer_y("BG_Suns", (view_y * 0.9)); //+ 800);
+	layer_y("BG_Suns", (view_y * 0.9)); // + 800);
 	
 	layer_hspeed("BG_Suns",-1);
 }
@@ -119,5 +119,11 @@ if(layer_exists("BG_Grid"))
 {
 	layer_x("BG_Grid",view_x * 0.2);
 	layer_y("BG_Grid", view_y * 0.2);
+}
+
+if(layer_exists("BG_Grid_Dark"))
+{
+	layer_x("BG_Grid_Dark",view_x * 0.2);
+	layer_y("BG_Grid_Dark", view_y * 0.2);
 }
 #endregion

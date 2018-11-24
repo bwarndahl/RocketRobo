@@ -1977,6 +1977,25 @@
             }
         },
         {
+            "Key": "6e46fd03-b55e-4f36-875f-030ed1c5851b",
+            "Value": {
+                "id": "a125ea0e-f738-4465-8809-2e839c81735c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/InteriorFG\/InteriorFG.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "6fa5723b-1262-47f0-9974-c2d7a04e8f39",
             "Value": {
                 "id": "2318ad2d-602c-441d-bc0a-589988fb7a1f",
@@ -2889,6 +2908,25 @@
             }
         },
         {
+            "Key": "aaae2b79-9977-4efb-bd7b-20212f798d1a",
+            "Value": {
+                "id": "73269b2f-c5d6-45b7-92ff-8a839554472c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sInteriorFG\/sInteriorFG.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ad2d41e0-b58c-446f-8f7b-6fdc31309b23",
             "Value": {
                 "id": "715b1681-291d-4ff8-90ce-e134d1f6f8db",
@@ -3098,6 +3136,25 @@
             }
         },
         {
+            "Key": "bb629746-c612-42c4-bdb4-443a844e0664",
+            "Value": {
+                "id": "2e7224d5-0976-4f58-82e5-6ab7426b1849",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/InteriorBG\/InteriorBG.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "bc6afdb5-b48f-497c-be4f-bd9784ccf2cf",
             "Value": {
                 "id": "e5c23e3d-1b23-4f0e-bce8-1a955c9095d6",
@@ -3152,6 +3209,44 @@
                 ],
                 "resourcePath": "objects\/oGauntletLD\/oGauntletLD.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c2753d84-fb0e-4a5b-b6e2-6ee5586fe159",
+            "Value": {
+                "id": "3b01cc51-eada-4e0b-979a-1aa296e1ebeb",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sInteriorBG\/sInteriorBG.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c279a3ed-c388-439d-8f17-9a7c7be9f370",
+            "Value": {
+                "id": "78ba905b-2fd6-4c5c-9318-177e335ab722",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/BGGridDark\/BGGridDark.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

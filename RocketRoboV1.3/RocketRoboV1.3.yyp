@@ -1179,6 +1179,25 @@
             }
         },
         {
+            "Key": "481b4792-01db-40c8-bda1-73a0320d3c4f",
+            "Value": {
+                "id": "d45f3849-eacc-4c68-b429-545cab0d7b63",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sfxPoof\/sfxPoof.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "48bc0202-0e79-40ac-a1d6-bd1cab979791",
             "Value": {
                 "id": "b55f9a0a-30bd-4b1e-933b-d0ff7ed87719",
@@ -3589,6 +3608,25 @@
                 ],
                 "resourcePath": "views\/d9735c2d-aba9-4516-a289-36068a985c13.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dc763672-0500-4ec5-9c80-6401dbf6a409",
+            "Value": {
+                "id": "b347d614-2b8c-41f0-bc33-bf2ff0cf4abf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/BGHexDark\/BGHexDark.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

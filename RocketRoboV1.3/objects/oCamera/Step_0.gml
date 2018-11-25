@@ -126,4 +126,10 @@ if(layer_exists("BG_Grid_Dark"))
 	layer_x("BG_Grid_Dark",view_x * 0.2);
 	layer_y("BG_Grid_Dark", view_y * 0.2);
 }
+
+if(layer_exists("BG_Hex_Dark"))
+{
+	layer_x("BG_Hex_Dark",view_x * 0.2);
+	layer_y("BG_Hex_Dark",view_y * 0.2);
+}
 #endregion

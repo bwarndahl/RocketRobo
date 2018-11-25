@@ -1,4 +1,6 @@
 /// @desc ?
+if(!audio_is_playing(sfxPoof)) audio_play_sound(sfxPoof,2,false);
+
 var i;
 for(i = 0; i < 4; i += 1)
 {

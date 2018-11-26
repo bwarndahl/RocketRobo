@@ -18,20 +18,7 @@ if(!instance_exists(oPlayerBody)) instance_create_layer(x,y,"lPlayer",oPlayerBod
 if(!instance_exists(oGauntletR)) instance_create_layer(x,y,"lGauntletR",oGauntletR);
 if(!instance_exists(oGauntletL)) instance_create_layer(x,y,"lGauntletL",oGauntletL);
 
-// Input //////////////////////////////////////////////////////////////////////
-kLeft        = 0;
-kRight       = 0;
-kUp          = 0;
-kDown        = 0;
-kJump        = 0;
-kJumpRelease = 0;
-kJumpHeld    = 0;
-
-kRClick		 = 0;
-
-
 // Movement Vars //////////////////////////////////////////////////////////////
-
 // Adjust THIS to adjust overall player speed
 m = 1;
 
@@ -45,7 +32,7 @@ airFric     = 0.10 * m;
 maxH        = 13  * m;
 maxV        = 13  * m;
 runSpd      = 8 * m;
-rrunSpd     = runSpd; //For resetting
+rrunSpd     = runSpd; //For reseting
 runCount    = 120;
 tauntCount  = 0;
 

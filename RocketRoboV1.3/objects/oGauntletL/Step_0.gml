@@ -3,9 +3,9 @@
 if(oPlayer.hasControl)
 {
 	#region Left Click
-	if (Gstate= Gstates.INACTIVE) && (oPlayer.canShoot) 
+	if (Gstate = Gstates.INACTIVE) && (oPlayer.canShoot) 
 	{
-		if (oPlayer.kClick) 
+		if (kClick) && (oPlayer.hasControl)
 		{
 			// Rocket creation + aim at mouse
 			audio_play_sound(sfxShot,5,false);
@@ -41,7 +41,7 @@ if(oPlayer.hasControl)
 	#region Right Click
 	if (Gstate = Gstates.INACTIVE) && (oPlayer.canShoot)
 	{
-		if (oPlayer.kRClick) && (oPlayer.hasControl)
+		if (kRClick) && (oPlayer.hasControl)
 		{
 			// Rocket creation + aim at mouse
 			audio_play_sound(sfxShot,5,false);
@@ -69,9 +69,7 @@ if(oPlayer.hasControl)
 	#endregion
 }
 
-
 event_inherited();
-
 
 if(oPlayer.dJump = false) sprite_index = sGauntletLY;
 else if(oPlayer.hp < 2) sprite_index = sGauntletLR;

@@ -13,7 +13,7 @@ if(Cstate = Cstates.PLAY)
 			else image_index = 1;
 		}
 	
-		if (oPlayer.kClick)
+		if (kClick)
 		{
 			image_index = 1;
 			click = true;

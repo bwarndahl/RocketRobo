@@ -62,3 +62,6 @@ if(instance_exists(oDisplayManager))
 	DebugDraw(oDisplayManager,view_h,64,96);
 }
 */
+
+if(instance_exists(oPlayer)) DebugDraw(oPlayer,oPlayer.tempFric,64,64);
+if(instance_exists(oPlayer)) DebugDraw(oPlayer,oPlayer.h,64,96);

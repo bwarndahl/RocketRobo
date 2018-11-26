@@ -2,24 +2,7 @@
 
 if(hasControl)
 {
-// Input //////////////////////////////////////////////////////////////////////
-
-kLeft        = keyboard_check(ord("A"));
-kRight       = keyboard_check(ord("D"));
-kUp          = keyboard_check(ord("W"));
-kDown        = keyboard_check(ord("S"));
-kDownP       = keyboard_check_pressed(ord("S"));
-kJump        = keyboard_check_pressed(vk_space);
-kJumpRelease = keyboard_check_released(vk_space);
-kJumpHeld    = keyboard_check(vk_space);
-kClick       = mouse_check_button_pressed(mb_left);
-kRClick      = mouse_check_button_pressed(mb_right);
-kRun         = keyboard_check_pressed(vk_lshift);
-kTaunt       = keyboard_check_pressed(ord("T"));
-
-angle = point_direction(x, y, mouse_x, mouse_y)
-
-///////////////////////////////////////////////////////////////////////////////
+angle = point_direction(x, y, mouse_x, mouse_y);
 
 dTrack = dJump; // Track whether double jump has changed
 
@@ -40,7 +23,8 @@ if (onGround) {
     tempFric  = airFric;
 }
 
-// Stick to wall //////////////////////////////////////////////////////////////
+#region Wall Cling
+// Stick to wall 
 if ((!cRight && !cLeft) || onGround) {
     canStick = true;
     sticking = false;
@@ -49,49 +33,42 @@ if ((!cRight && !cLeft) || onGround) {
 // Cling to wall
 if (((kRight && cLeft) || (kLeft && cRight)) && canStick && !onGround) {
     alarm[0] = clingTime;
-    sticking = true; 
-    canStick = false;       
+    sticking = true;
+    canStick = false;
 }
-///////////////////////////////////////////////////////////////////////////////
+#endregion
 
 // Left 
-if (kLeft && !kRight && !sticking) {
+if (kLeft && !kRight && !sticking)
+{
     facing = LEFT;
 
     // Apply acceleration left
-    if (h > 0)
-        h = Approach(h, 0, tempFric);   
+    if (h > 0) h = Approach(h, 0, tempFric);  
+	
     h = Approach(h, -runSpd, tempAccel);
         
-    if (onGround /*&& !cLeft*/)
-        state = states.RUN;
-    else {
-        if (onGround)
-            state = states.IDLE;
-    }
+    if (onGround) state = states.RUN;
+    else if (onGround) state = states.IDLE;
 }
 
 // Right 
-if (kRight && !kLeft && !sticking) {
+if (kRight && !kLeft && !sticking)
+{
     facing = RIGHT;
 
     // Apply acceleration right
-    if (h < 0)
-        h = Approach(h, 0, tempFric);   
-		h = Approach(h, runSpd, tempAccel);
+    if (h < 0) h = Approach(h, 0, tempFric);
+	
+	h = Approach(h, runSpd, tempAccel);
         
-    if (onGround /*&& !cRight*/)
-        state = states.RUN;
-    else {
-        if (onGround)
-            state = states.IDLE;
-    }
+    if (onGround) state = states.RUN;
+    else if (onGround) state = states.IDLE;
 }
 
-if (onGround && h == 0)
-    state = states.IDLE;    
+if (onGround && h == 0) state = states.IDLE;
        
-#region Wall jump
+#region Wall Jump
 if (kJump && cLeft && !onGround) {
 	ffall = false;
     // Stretch sprite

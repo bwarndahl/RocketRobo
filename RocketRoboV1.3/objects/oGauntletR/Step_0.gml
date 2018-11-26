@@ -4,7 +4,7 @@ if(oPlayer.hasControl)
 	#region Left Click
 	if (Gstate = Gstates.INACTIVE) && (instance_exists(oGauntletR))
 	{
-		if (oPlayer.kClick) && (oPlayer.hasControl)
+		if (kClick) && (oPlayer.hasControl)
 		{
 			// Rocket creation + aim at mouse
 			audio_play_sound(sfxShot,5,false);
@@ -52,7 +52,7 @@ if(oPlayer.hasControl)
 	#region Right Click
 	if (Gstate = Gstates.INACTIVE) && (instance_exists(oGauntletR))
 	{
-		if (oPlayer.kRClick) && (oPlayer.hasControl)
+		if (kRClick) && (oPlayer.hasControl)
 		{
 			// Rocket creation + aim at mouse
 			audio_play_sound(sfxShot,5,false);

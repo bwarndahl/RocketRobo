@@ -8,7 +8,7 @@ if(instance_exists(oCursor))
 			if(oPlayer.state != states.RESPAWN)
 			{
 				// Draw Line
-				draw_set_alpha(0.25)
+				draw_set_alpha(0.15);
 				draw_line_width_color(mouse_x,mouse_y,oPlayer.x,oPlayer.y,6,c_white,c_white);
 				draw_set_alpha(1);
 			}

@@ -108,9 +108,11 @@ if(isActive)
 #region RICOCHET
 if(Gstate = Gstates.RICOCHET)
 {
-	direction = random_range(0,180);
+	if(dir_switch) direction = -direction;
+	dir_switch = false;
 	image_angle += 45;
 }
+else dir_switch = true;
 #endregion
 
 

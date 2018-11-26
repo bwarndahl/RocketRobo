@@ -353,6 +353,20 @@
             "value": "5",
             "varName": "flash",
             "varType": 0
+        },
+        {
+            "id": "41812e15-3e9e-4572-9ee6-4f9532f63a7d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "dir_switch",
+            "varType": 3
         }
     ],
     "solid": false,

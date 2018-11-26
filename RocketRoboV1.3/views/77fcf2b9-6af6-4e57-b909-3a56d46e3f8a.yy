@@ -4,7 +4,9 @@
     "mvc": "1.1",
     "name": "77fcf2b9-6af6-4e57-b909-3a56d46e3f8a",
     "children": [
-        "e520963f-faa3-4d27-a21b-f26f28029f59"
+        "e520963f-faa3-4d27-a21b-f26f28029f59",
+        "aaae2b79-9977-4efb-bd7b-20212f798d1a",
+        "c2753d84-fb0e-4a5b-b6e2-6ee5586fe159"
     ],
     "filterType": "GMSprite",
     "folderName": "Tile Sets",

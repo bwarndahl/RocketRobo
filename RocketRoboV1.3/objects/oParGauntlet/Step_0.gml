@@ -204,6 +204,46 @@ if(Gstate = Gstates.GRAB)
 			state = states.GRAB;
 			//show_debug_message("Active");
 			
+			#region Jump
+			if (kJump) && (!place_meeting(x,y,oParSolid))
+			{
+				canJump = 0;
+				ffall = false;
+		
+				other.Gstate = Gstates.INACTIVE;
+				other.isActive = false;
+				state = states.JUMP;
+				
+				instance_destroy(oChain);
+				
+				isSolid = true;
+				isIntangible = false;
+				hasControl = true;
+			
+			    // Particles
+			    var i;
+			    for (i = 0; i < 4; ++i)
+					with (instance_create(x + random_range(-8, 8), bbox_bottom, oParticle))
+						direction = 90 + random_range(-45, 45);        
+        
+				audio_play_sound(sfxJump,10,false);
+		
+			    v = v - jumpHeight;
+			}
+			else 
+			{
+			    //Variable jump height
+    
+				if (kJumpRelease) && (dJump = true) {
+			        if (v < 0 && v >= -jumpHeight)
+			            v *= 0.5; 
+			    }
+	
+	
+				if(v < 0) && (!kJumpHeld) vsp = max(v,(jumpHeight / 4))
+			}
+			#endregion
+			
 			if(place_meeting(x,y,other))
 			{
 				other.Gstate = Gstates.INACTIVE;
@@ -213,6 +253,7 @@ if(Gstate = Gstates.GRAB)
 				instance_destroy(oChain);
 				
 				isSolid = true;
+				isIntangible = false;
 				hasControl = true;
 				
 				//h = point_distance(x,y,xprevious,yprevious);

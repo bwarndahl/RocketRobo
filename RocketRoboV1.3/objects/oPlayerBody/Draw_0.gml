@@ -67,7 +67,7 @@ if(oPlayer.state = states.GRAB) sprite_index = sPlayerJumpM;
 if(oPlayer.hit > 0) sprite_index = sPlayerJumpD;
 
 
-if(oPlayer.isIntangible)
+if(oPlayer.isIntangible) && (oPlayer.state != states.GRAB)
 {
 	temp++;
 	

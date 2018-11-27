@@ -9,7 +9,7 @@ if(flash > 0)
 	shader_reset();
 }
 
-if(oPlayer.isIntangible)
+if(oPlayer.isIntangible) && (oPlayer.state != states.GRAB)
 {
 	temp++;
 	

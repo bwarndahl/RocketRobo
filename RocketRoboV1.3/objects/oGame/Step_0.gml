@@ -1,5 +1,4 @@
 /// @desc Check Inputs
-
 #region Input
 kLeft        = keyboard_check(ord("A"));
 kRight       = keyboard_check(ord("D"));

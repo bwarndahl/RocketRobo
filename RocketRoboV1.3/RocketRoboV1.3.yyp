@@ -115,6 +115,25 @@
             }
         },
         {
+            "Key": "03173ec9-7a19-41ff-918f-150956d62c3e",
+            "Value": {
+                "id": "77babb4c-2c24-4172-a7f1-e36178993373",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/03173ec9-7a19-41ff-918f-150956d62c3e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "081a353f-d27b-4314-85f9-5c129573c4cb",
             "Value": {
                 "id": "d375a1e5-b3f2-49c0-9c60-adadec85d1ce",
@@ -1195,6 +1214,25 @@
                 ],
                 "resourcePath": "sounds\/sfxPoof\/sfxPoof.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "483cbd1a-9a8d-47e2-a8ed-059a7f244306",
+            "Value": {
+                "id": "94052d52-8e72-4e33-81ec-b9e2936d5f52",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/GrassBG\/GrassBG.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -3060,6 +3098,25 @@
             }
         },
         {
+            "Key": "b38b8b89-c0b9-47b5-90ad-a6f6f9b4bd3c",
+            "Value": {
+                "id": "12c63f31-1a37-47cf-8617-5063b70c6808",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/b38b8b89-c0b9-47b5-90ad-a6f6f9b4bd3c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b452b09d-ed01-4a2e-b187-0080eee30a50",
             "Value": {
                 "id": "60f9bc02-b9fd-4b29-9935-1a0b91dfc302",
@@ -3228,6 +3285,25 @@
                 ],
                 "resourcePath": "objects\/oEyeAfterimageY\/oEyeAfterimageY.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "be56229c-af8b-4d4f-ac32-45383a740e08",
+            "Value": {
+                "id": "cf9827f4-7d27-4cbb-9c81-e5df23b3387b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sGrassTilesBG\/sGrassTilesBG.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4315,9 +4391,6 @@
         }
     ],
     "script_order": [
-        "29a6b650-d357-40d9-b11d-51946d1e37ba",
-        "e1e13789-397e-471c-9bbe-470aff9213c4",
-        "2e8f8daf-53b0-4253-90db-d514fe72b465",
         "870c7823-512d-4a81-9cd8-ba6ae67972bf",
         "6af6a1ba-24ac-4302-b608-345a8ca3660b",
         "86e6970a-53bb-40d2-93fc-5356d8dd3396",
@@ -4326,18 +4399,21 @@
         "4bbeec37-7437-4646-ae78-1289ffae8e5f",
         "197b244a-be48-4872-b1aa-df3b90530b0b",
         "951b7937-b2b5-45b8-810a-7aa9643b7bbe",
+        "29a6b650-d357-40d9-b11d-51946d1e37ba",
         "61794ecf-92a1-4f63-a51a-af961df396f5",
+        "e1e13789-397e-471c-9bbe-470aff9213c4",
+        "2e8f8daf-53b0-4253-90db-d514fe72b465",
         "dc9ecff8-2cd4-4b42-b577-002e3bb50589",
         "0ea4e542-2dde-46af-a116-93dfec557819",
         "935d405a-fbef-4cba-aea6-b355a3ccd0ae",
+        "5aa6508f-6ebd-4864-a3aa-749a967cc0de",
+        "c4d0c671-1354-4901-a990-8dd7bba6759f",
+        "69d4d59f-6e39-4483-8934-b8019126a86d",
         "45ffe77d-2e66-47f8-92f7-8482bd8e9e35",
         "4a06f161-473a-4087-ac82-4be924f64aed",
         "1b0ad977-a8d7-436f-bde0-e119b7af00b9",
         "9fbec3a9-6874-4e30-9f2d-9e688560d30c",
-        "cfd90524-9bf0-4195-8fd2-ff33b7c7256f",
-        "5aa6508f-6ebd-4864-a3aa-749a967cc0de",
-        "c4d0c671-1354-4901-a990-8dd7bba6759f",
-        "69d4d59f-6e39-4483-8934-b8019126a86d"
+        "cfd90524-9bf0-4195-8fd2-ff33b7c7256f"
     ],
     "tutorial": ""
 }

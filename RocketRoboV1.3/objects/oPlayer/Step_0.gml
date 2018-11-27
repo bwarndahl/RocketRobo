@@ -323,7 +323,7 @@ if(kRun)
 if(runSpd != rrunSpd) && (oGauntletR.Gstate != Gstates.RUN) runSpd = Approach(runSpd,rrunSpd,1)
 #endregion
 
-///Taunt
+#region Taunt
 if(kTaunt) && (onGround) //&& (tauntCount == 0)
 {
 	state = states.TAUNT;
@@ -336,12 +336,14 @@ else
 	//h = 0;
 	//v = 0;
 }
+#endregion
 
 #region Grab
 if(state = states.GRAB)
 {
 	hasControl = false;
 	isSolid = false;
+	isIntangible = true;
 	
 	grab_speed = point_distance(x,y,targetx,targety);
 	grab_speed = clamp(grab_speed,6,max_grab_speed);

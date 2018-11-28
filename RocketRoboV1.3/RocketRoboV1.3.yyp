@@ -3326,6 +3326,25 @@
             }
         },
         {
+            "Key": "c1450b4e-0e11-4a28-891e-2e8cd88c0776",
+            "Value": {
+                "id": "aa569b2a-2643-4ac3-8220-40edcd10e5a9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sCountdown\/sCountdown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c1a1d699-a38b-485a-8436-a910aa9eaa19",
             "Value": {
                 "id": "ecbcffa2-d44c-467d-ad73-3d7b271130cf",

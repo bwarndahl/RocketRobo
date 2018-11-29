@@ -9,13 +9,16 @@ if(tState = timerStates.COUNTDOWN)
 	else
 	{
 		temp_scale += 0.1;
-		draw_sprite_ext(sCountdown,frame,xx,yy,temp_scale,temp_scale,image_angle,image_blend,1);
+		if(scale < init_scale/5 && image_alpha > 0) alpha -= 0.1;
+		draw_sprite_ext(sCountdown,frame,xx,yy,temp_scale,temp_scale,image_angle,image_blend,alpha);
 	}
 	
-	var decay_rate = 0.3;
+	var decay_rate
+	if(scale < init_scale/4) decay_rate = 0.1;
+	else decay_rate = 5;
 	scale -= decay_rate;
 	
-	if(scale <= 12)
+	if(scale <= 8)
 	{
 		frame += 1;
 		scale = init_scale;
@@ -27,7 +30,8 @@ else
 {
 	frame = 0;
 	scale = init_scale;
-	temp_scale = init_scale/1.5;
+	temp_scale = init_scale/5;
+	alpha = 1;
 }
 
 if(tState = timerStates.ON)

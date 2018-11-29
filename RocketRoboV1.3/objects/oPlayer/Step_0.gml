@@ -1,5 +1,5 @@
 /// @desc Controls, Movement, & States
-if(oTransition.mode != TRANS_MODE.OFF)
+if(oTransition.mode != TRANS_MODE.OFF) || (oTimer.tState = timerStates.COUNTDOWN)
 {
 	hasControl = false;
 	trans_off = true;

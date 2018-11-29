@@ -1,4 +1,4 @@
-/// @desc Progress the Transition
+ /// @desc Progress the Transition
 if(type = TRANS_TYPE.CIRCLE)
 {
 	if(mode != TRANS_MODE.OFF)

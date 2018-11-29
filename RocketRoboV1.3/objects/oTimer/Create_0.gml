@@ -1,7 +1,4 @@
-/// @desc ?
-//seconds = 0;
-//minutes = 0;
-
+/// @desc States, Variables
 enum timerStates
 {
 	COUNTDOWN,

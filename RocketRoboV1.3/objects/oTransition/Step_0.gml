@@ -62,6 +62,7 @@ if(type = TRANS_TYPE.TILE)
 	if (done)
 	{
 		room_goto(targetRoom);
+		mode = TRANS_MODE.OFF;
 	    done = false;
 		//draw_circle_color(oTransition.w_half, oTransition.h_half,32,c_red,c_red,false)
 	}

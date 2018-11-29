@@ -1,6 +1,15 @@
 /// @desc Controls, Movement, & States
-if(hasControl)
+if(oTransition.mode != TRANS_MODE.OFF)
 {
+	hasControl = false;
+	trans_off = true;
+}
+else
+{
+	if(trans_off) hasControl = true;
+	trans_off = false;
+}
+
 angle = point_direction(x, y, mouse_x, mouse_y);
 
 dTrack = dJump; // Track whether double jump has changed
@@ -37,6 +46,8 @@ if (((kRight && cLeft) || (kLeft && cRight)) && canStick && !onGround) {
 }
 #endregion
 
+if(hasControl)
+{
 // Left 
 if (kLeft && !kRight && !sticking)
 {

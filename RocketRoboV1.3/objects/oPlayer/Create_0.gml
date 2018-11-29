@@ -3,6 +3,7 @@ h = 0;
 v = 0;
 
 hasControl = true;
+trans_off = true;
 
 // Collision below
 onGround = false;

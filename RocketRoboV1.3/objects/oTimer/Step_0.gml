@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Count & Calculate Seconds/Minutes
 if(tState = timerStates.ON)
 {
 	seconds += 1/room_speed;

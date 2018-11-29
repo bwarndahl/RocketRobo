@@ -1,4 +1,4 @@
-/// @desc ?
+/// @desc Countdown Visual & Count Up Timer
 if(tState = timerStates.COUNTDOWN)
 {
 	var xx, yy;

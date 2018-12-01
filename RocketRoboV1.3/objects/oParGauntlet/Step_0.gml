@@ -1,6 +1,7 @@
 /// @desc State & Looking Code
 distx = point_distance(x, y, oPlayer.x - (6 * sign(oPlayer.facing)),oPlayer.y);
-if (Gstate = Gstates.ROCKET) || (Gstate = Gstates.GRAB) || (Gstate = Gstates.RICOCHET) isActive = true;
+if(Gstate = Gstates.ROCKET) || (Gstate = Gstates.GRAB) || (Gstate = Gstates.RICOCHET) isActive = true;
+if(oPlayer.state = states.RESPAWN) Gstate = Gstates.INACTIVE;
 
 #region Looking & State Code
 

@@ -48,15 +48,17 @@ if (((kRight && cLeft) || (kLeft && cRight)) && canStick && !onGround) {
 
 if(hasControl)
 {
+#region Run
 // Left 
 if (kLeft && !kRight && !sticking)
 {
     facing = LEFT;
 
     // Apply acceleration left
-    if (h > 0) h = Approach(h, 0, tempFric);  
+    //if (h > 0) h = Approach(h, 0, tempFric);  
 	
-    h = Approach(h, -runSpd, tempAccel);
+    if(h > -runSpd) && (!onGround) h -= tempAccel;
+	else if(onGround) h = Approach(h, -runSpd, tempAccel);
         
     if (onGround) state = states.RUN;
     else if (onGround) state = states.IDLE;
@@ -68,16 +70,18 @@ if (kRight && !kLeft && !sticking)
     facing = RIGHT;
 
     // Apply acceleration right
-    if (h < 0) h = Approach(h, 0, tempFric);
+   // if (h < 0) h = Approach(h, 0, tempFric);
 	
-	h = Approach(h, runSpd, tempAccel);
+	if(h < runSpd) && (!onGround) h += tempAccel;
+	else if(onGround) h = Approach(h, runSpd, tempAccel);
         
     if (onGround) state = states.RUN;
     else if (onGround) state = states.IDLE;
 }
 
 if (onGround && h == 0) state = states.IDLE;
-       
+#endregion
+
 #region Wall Jump
 if (kJump && cLeft && !onGround) {
 	ffall = false;
@@ -386,8 +390,8 @@ if(state = states.GRAB)
 
 
 // Friction
-if (!kRight && !kLeft)
-    h = Approach(h, 0, tempFric);
+//if (!kRight && !kLeft)
+h = Approach(h, 0, tempFric);
 
 #region Gravity
 if(kDownP) && (!onGround) && (hasControl)

@@ -1,4 +1,5 @@
 /// @desc Countdown Visual & Count Up Timer
+#region Countdown
 if(tState = timerStates.COUNTDOWN)
 {
 	var xx, yy;
@@ -9,7 +10,7 @@ if(tState = timerStates.COUNTDOWN)
 	else
 	{
 		temp_scale += 0.1;
-		if(scale < init_scale/5 && image_alpha > 0) alpha -= 0.1;
+		if(scale < init_scale/5 && image_alpha > 0) alpha -= 0.15;
 		draw_sprite_ext(sCountdown,frame,xx,yy,temp_scale,temp_scale,image_angle,image_blend,alpha);
 	}
 	
@@ -33,7 +34,9 @@ else
 	temp_scale = init_scale/5;
 	alpha = 1;
 }
+#endregion
 
+#region Timer
 if(tState = timerStates.ON)
 {
 	draw_set_font(FONT2);
@@ -50,3 +53,4 @@ if(tState = timerStates.ON)
 	else if(minutes < 10 && seconds >= 10)	draw_text(display_get_gui_width() - xoffset,yoffset,"0" + string(display_minutes) +  ":" + string(display_seconds));
 	else if(minutes >= 10 && seconds >= 10) draw_text(display_get_gui_width() - xoffset,yoffset,string(display_minutes) +  ":" + string(display_seconds));
 }
+#endregion

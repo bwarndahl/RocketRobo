@@ -25,9 +25,9 @@ m = 1;
 
 // Acceleration + friction
 groundAccel = 1.0  * m;
-groundFric  = 1.5  * m;
+groundFric  = 0.5  * m;
 airAccel    = 0.75 * m;
-airFric     = 0.10 * m;
+airFric     = 0.05 * m;
 
 // Max movement speeds
 maxH        = 13  * m;
